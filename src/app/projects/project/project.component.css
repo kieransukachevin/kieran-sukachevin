@@ -1,0 +1,18 @@
+.project-area {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.project-header {
+    margin-bottom: 20px;
+}
+.project-description {
+    text-align:center; 
+    width: 70%;
+    margin: auto;
+}
+.project-image {
+    margin-bottom: 20px;
+    min-height: 400px;
+    max-height: 500px;
+}

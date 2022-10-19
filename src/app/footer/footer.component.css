@@ -1,0 +1,11 @@
+.footer-area {
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    max-height: 100px;
+    width: 100%;
+  }
+.footer-image {
+  position: relative;
+  max-width: 80px;
+}

@@ -1,0 +1,11 @@
+<div #topBar class="header-area" [class.sticky]="sticky">
+  <app-logo></app-logo>
+  <div class="top-bar">
+    <div class="inner-top-bar" [style.opacity]="opacity">
+      <div class="app-nav"></div>
+    </div>
+  </div>
+  <button class="hide-button" (click)="toggleHide()">
+    <img src="assets/menu_blue.png" style="max-height: 40px;">
+  </button>
+</div>
