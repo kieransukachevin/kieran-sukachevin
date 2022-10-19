@@ -1,8 +1,20 @@
-.about-area {
-    width: 70%;
+.about-wrapper {
     margin: auto;
+    display: block;
+}
+.about-wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
 }
 .about-image {
-    max-height: 300px;
-    margin-bottom: 20px;
+    display: block;
+    float: left;
+    max-width: 40%;
+}
+.about-description {
+    display: block;
+    float: left;
+    max-width: 40%;
+    margin-left: 40px;
 }

@@ -10,9 +10,9 @@
 }
 .description-wrapper {
     display: block;
-    float: right;
+    float: left;
     max-width: 30%;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 .project-image {
     display: block;
