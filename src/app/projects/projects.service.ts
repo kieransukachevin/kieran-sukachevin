@@ -32,7 +32,7 @@ export class ProjectsService {
     'description': `<p>This website! This website is an ongoing project written in TypeScript using the Angular framework. TypeScript features
     include dynamic changes in HTML and CSS (changes in opacity, mouse events, and menu fading) as well as data sharing using services and property bindings.
     </p>`,
-    'source': 'https://github.com/kieransukachevin/Drawit'
+    'source': 'https://github.com/kieransukachevin/kieran-sukachevin'
     },
   ]
 
