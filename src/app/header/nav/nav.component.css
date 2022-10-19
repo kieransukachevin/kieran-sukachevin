@@ -2,17 +2,17 @@
     right: 20%;
 }
 .nav-menu {
-    padding-top: 2vw;
-    display: flex;
-    justify-content: space-between;
+    display: block;
     list-style: none;
     padding-inline-start: 0;
-    align-items: center;
 }
 .nav-menu-item {
     position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+}
+.nav-anchor {
+    font-size: small;
+    padding: 0;
 }
 a:active {
     /* color: rgb(183, 183, 183); */

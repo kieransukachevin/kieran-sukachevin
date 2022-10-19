@@ -1,11 +1,16 @@
-<div #topBar class="header-area" [class.sticky]="sticky">
+<div #topBar class="header-area">
   <app-logo></app-logo>
-  <div class="top-bar">
-    <div class="inner-top-bar" [style.opacity]="opacity">
+  <div class="menu-wrapper">
+    <button class="hide-button" (click)="toggleHide()">
+      <img src="assets/menu_blue.png" style="max-height: 30px;">
+    </button>
+    <div [style.opacity]="opacity">
       <div class="app-nav"></div>
+      <div class="logo-area">
+        <a class="logo-anchor" href="https://www.instagram.com/kieran_suka/"><img class="logo" src="assets/insta-logo.png"></a>
+        <a class="logo-anchor" href="https://github.com/kieransukachevin"><img class="logo" src="assets/github-logo.png"></a>
+        <a class="logo-anchor" href="https://www.linkedin.com/in/kieran-sukachevin-365a87198/"><img class="logo" src="assets/linkedin-logo.png"></a>  
+      </div>
     </div>
   </div>
-  <button class="hide-button" (click)="toggleHide()">
-    <img src="assets/menu_blue.png" style="max-height: 40px;">
-  </button>
 </div>

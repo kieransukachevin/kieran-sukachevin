@@ -12,7 +12,6 @@ h1 {
   }
   body {
     text-align: center;
-    margin: 2em;
   }
   body, input[type="text"], button {
     color: #333;
@@ -39,7 +38,21 @@ h1 {
     color: #aaa;
     cursor: auto;
   }
-  
+  .canvas {
+    padding: 65px;
+    display: block;
+  }
+  .app-header {
+    display: block;
+    max-width: 150px;
+    position: fixed;
+  }
+  .page {
+    display: block;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
   * {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
   }
