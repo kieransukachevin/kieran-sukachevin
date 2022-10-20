@@ -8,20 +8,29 @@
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 250%;
     letter-spacing: 0.2em !important;
+    text-align: left;
   }
   h1.category-header {
     /* font-weight: lighter; */
     margin-bottom: 50px;
   }
-  p, h2, h3 {
+  h2, h3 {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    /* font-weight: lighter; */
+    line-height: 2;
+    letter-spacing: 0.4em !important;
+    text-align:left;
+    font-size: medium;
+    color: rgb(42, 97, 218);
+  }
+  p {
     color: rgb(37, 37, 37);
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     /* font-weight: lighter; */
     line-height: 2;
     letter-spacing: 0.2em !important;
-  }
-  body {
-    margin: 2em;
+    text-align:left;
+    font-size: small;
   }
   body, input[type="text"], button {
     color: rgb(37, 37, 37);
@@ -63,14 +72,14 @@
     border-radius: 10px;
     /* color: rgb(37, 37, 37);
      */
-     color: rgb(42, 97, 218);
+    color: rgb(42, 97, 218);
     font-size: 1.2rem;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    letter-spacing: 0.4em !important;
+    letter-spacing: 0.3em !important;
     /* font-weight: lighter; */
   }
   a:hover {

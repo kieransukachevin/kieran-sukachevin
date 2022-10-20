@@ -1,18 +1,39 @@
 .project-area {
-    align-items: center;
-    text-align: center;
     margin-bottom: 150px;
+    /* height: auto; */
+    display: block;
 }
-.project-header {
-    margin-bottom: 20px;
+.project-area:after {
+    clear: both;
+    content: "";
+    display: block;
 }
-.project-description {
-    text-align:center; 
-    width: 70%;
-    margin: auto;
+.description-wrapper {
+    display: block;
+    float: left;
+    max-width: 30%;
+    margin-left: 40px;
 }
 .project-image {
-    margin-bottom: 20px;
-    min-height: 400px;
-    max-height: 500px;
+    display: block;
+    float: left;
+    max-width: 60%;
+    margin-left: 10px;
+}
+.project-header {
+    display: block;
+    font-size: medium;
+    text-align: left;
+    color: rgb(42, 97, 218);
+}
+.project-description {
+    display: block;
+    font-size: small;
+}
+.project-source {
+    float: left;
+    font-size: medium;
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }

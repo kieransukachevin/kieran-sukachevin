@@ -1,8 +1,10 @@
-<div class="project-area">
-    <app-in-view>
-        <h2 class="project-header">{{title}}</h2>
+<app-in-view> 
+    <div class="project-area">
         <img class="project-image" src="{{img}}">
-        <div class="project-description" [innerHtml]="description"></div>
-        <a href="{{source}}">source</a>
-    </app-in-view>    
-</div>
+        <div class="description-wrapper">
+            <h2 class="project-header">{{title}}</h2>       
+            <div class="project-description" [innerHtml]="description"></div>
+            <a class="project-source" href="{{source}}">source</a>
+        </div>
+    </div>
+</app-in-view>
