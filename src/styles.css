@@ -8,6 +8,7 @@
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 250%;
     letter-spacing: 0.2em !important;
+    text-align: left;
   }
   h1.category-header {
     /* font-weight: lighter; */
@@ -78,7 +79,7 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    letter-spacing: 0.4em !important;
+    letter-spacing: 0.3em !important;
     /* font-weight: lighter; */
   }
   a:hover {
