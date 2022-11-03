@@ -1,19 +1,30 @@
-.logo-area {
-  margin:0;
-  display: flex;
-  position: relative;
-  min-height: 100px;
-  max-height: 150px;
-}
 .logo-header {
   max-width: 200px;
-  /* font-weight: lighter; */
   position: absolute;
   margin-top: 10px;
 }
 .image {
   position: relative;
-  max-width: 150px;
+  width: 160px;
   margin-top: 10px;
 }
-  
+@media (max-width: 50em) {  /* Portrait mode */
+  .logo-area {
+    margin:0;
+    display: flex;
+    width: 160px;
+    margin: auto;
+  }
+  h1 {
+    text-align: center;
+    width: 160px;
+  }
+}
+@media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+  .logo-area {
+    margin:0;
+    display: flex;
+    position: relative;
+    width: 160px;
+  }
+}

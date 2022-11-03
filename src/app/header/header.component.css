@@ -1,18 +1,14 @@
-.header-area {
-}
 .top-bar {
   display: block;
   align-items: center;
   min-height: 30px;
   max-height: 100px;
   width: 80vw;
-  /* margin-left: 100px; */
 }
 .inner-top-bar {
   display: block;
   min-height: 30px;
   max-height: 100px;
-  /* background-color:  rgb(236, 241, 252); */
   background-color:rgb(255, 255, 255);
 }
 .sticky{
@@ -24,22 +20,6 @@
 .menu-wrapper {
   margin-left: 10px;
 }
-.hide-button {
-  display: flex;
-  margin-bottom: 10px;
-  padding: 0;
-  background-color: transparent;
-  border-radius: 0;
-  bottom: 0;
-  right: 0;
-  align-items: center;
-}
-.hide-button:hover {
-  opacity: 0.5;
-}
-.logo-area {
-  display: flex;
-}
 .logo-anchor {
   padding: 0;
   margin: 0;
@@ -47,4 +27,38 @@
 .logo {
   margin-right: 10px;
   max-width: 15px;
+}
+@media (max-width: 50em) {  /* Portrait mode */
+  .logo-area {
+    display: inline-block;
+  }
+  .hide-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+  }
+  .hide-button:hover {
+    opacity: 0.5;
+  }
+}
+@media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+  .logo-area {
+    display: flex;
+  }
+  .hide-button {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+  }
 }

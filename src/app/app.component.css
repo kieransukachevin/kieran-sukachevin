@@ -44,12 +44,10 @@ h1 {
   }
   .app-header {
     display: block;
-    max-width: 150px;
     /* position: fixed; */
   }
   .page {
     display: block;
-    /* margin-left: 250px; */
     margin-top: 30px;
   }
   @media (min-width: 50em) and (orientation: landscape) {

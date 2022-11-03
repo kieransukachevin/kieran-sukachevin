@@ -9,15 +9,9 @@
     display: block;
 }
 .about-image {
-    display: block;
     float: left;
     max-width: 40%;
-}
-.about-description {
-    display: block;
-    float: left;
-    max-width: 40%;
-    margin-left: 40px;
+    margin-right: 20px;
 }
 .email-source {
     font-size: small;

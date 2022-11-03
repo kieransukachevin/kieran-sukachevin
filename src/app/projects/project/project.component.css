@@ -9,16 +9,16 @@
     display: block;
 }
 .description-wrapper {
-    display: block;
-    float: left;
-    max-width: 30%;
-    margin-left: 40px;
+    /* display: block; */
+    /* float: left; */
+    /* max-width: 30%; */
+    /* margin-left: 40px; */
 }
 .project-image {
-    display: block;
+    /* display: block; */
     float: left;
     max-width: 60%;
-    margin-left: 10px;
+    margin-right: 20px;
 }
 .project-header {
     display: block;
