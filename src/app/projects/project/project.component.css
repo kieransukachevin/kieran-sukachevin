@@ -1,6 +1,5 @@
 .project-area {
     margin-bottom: 150px;
-    /* height: auto; */
     display: block;
 }
 .project-area:after {
@@ -8,14 +7,7 @@
     content: "";
     display: block;
 }
-.description-wrapper {
-    /* display: block; */
-    /* float: left; */
-    /* max-width: 30%; */
-    /* margin-left: 40px; */
-}
 .project-image {
-    /* display: block; */
     float: left;
     max-width: 60%;
     margin-right: 20px;
@@ -35,5 +27,14 @@
     font-size: medium;
     text-align: left;
     margin: 0;
+    padding: 0;
+}
+h2:hover {
+    /* color: rgb(183, 183, 183);
+        */
+    color: rgb(125, 155, 219);
+    text-decoration: none;
+}
+a {
     padding: 0;
 }
