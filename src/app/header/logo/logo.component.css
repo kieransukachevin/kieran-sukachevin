@@ -17,7 +17,7 @@
   }
   h1 {
     text-align: center;
-    width: 160px;
+    width: 160çpx;
   }
 }
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
