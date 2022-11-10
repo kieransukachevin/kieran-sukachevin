@@ -5,6 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class ProjectsService {
   projectsInfo = [
+    {'title': 'Spotify Alphabetizer', 'img': 'assets/projects/spotify-alphabetize.gif',
+    'description': `<p>An Angular web app that alphabetizes your Spotify playlists. Utilizes the Angular Http Client Module
+    to make requests to Spotify API endpoints including user authentication, retrieving user information, and retrieving user playlists.
+    Leverages the Angular component structure with a shared service module for backend functions (including http calls) and data retrieval.
+    Uses the Bubble Sort Algorithm for sorting the songs on a playlist alphabetically.
+    </p>`,
+    'source': 'https://github.com/kieransukachevin/spotify-alphabetize'
+    },
     {'title': 'Alkalinity Titrator - UI State Machine', 'img': 'assets/projects/titrator.png',
     'description': `<p>A new UI state machine framework for the UI framework for the open source Alkalinity Titrator project. 
     The UI framework additionally includes a comprehensive test suite (unit and acceptance tests) using Pytest. 
