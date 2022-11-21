@@ -4,11 +4,6 @@
     margin-bottom: 100px;
     display: block;
 }
-.art-wrapper:after {
-    clear: both;
-    content: "";
-    display: block;
-}
 .art {
-    /* float: left; */
+    display: block;
 }

@@ -50,8 +50,15 @@ export class InViewComponent implements OnInit, OnDestroy {
     if (entry.intersectionRatio <= 0.4) {
       this.element.nativeElement.style.opacity = entry.intersectionRatio + 0.2;
       this.element.nativeElement.style.blur = entry.intersectionRatio + 0.2;
+
+      this.element.nativeElement.children[0].style.animationName = 'un-focus';
+      this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
+      this.element.nativeElement.children[0].style.animationDuration = '0.2s';
     } else {
       this.element.nativeElement.style.opacity = 1.0;
+      this.element.nativeElement.children[0].style.animationName = 'focus';
+      this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
+      this.element.nativeElement.children[0].style.animationDuration = '0.2s';
     }
   }
 

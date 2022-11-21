@@ -15,8 +15,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit(){
     this.zId = this.topBar?.nativeElement.offsetHeight;
@@ -25,7 +24,6 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     const windowScroll = window.pageYOffset;
-    console.log(this.zId);
     if(windowScroll >= this.zId){
         this.sticky = true;
     } else {

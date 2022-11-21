@@ -1,3 +1,11 @@
 .in-view {
-    display: block;
+    display: block; 
+}
+@keyframes un-focus {
+    from {transform: scale(1.02);}
+    to {transform: scale(1);}
+}
+@keyframes focus {
+    from {transform: scale(1);}
+    to {transform: scale(1.02);}
 }

@@ -39,7 +39,7 @@ h1 {
     cursor: auto;
   }
   .canvas {
-    padding: 65px;
+    padding: 10px;
     display: block;
   }
   .app-header {
@@ -60,6 +60,9 @@ h1 {
       display: block;
       margin-left: 250px;
       margin-top: 30px;
+    }
+    .canvas {
+      padding: 65px;
     }
   }
 

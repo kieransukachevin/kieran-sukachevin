@@ -7,7 +7,7 @@ export class ArtPortfolioService {
   artNames: Array<string> | undefined;
 
   constructor() {
-    this.artNames = Array.from(Array(21), (_,x) => String(x))
+    this.artNames = Array.from(Array(22), (_,x) => String(x))
   }
 
   getArtNames() {
