@@ -11,7 +11,7 @@ export class ProjectsService {
     Leverages the Angular component structure with a shared service module for backend functions (including http calls) and data retrieval.
     Uses the Bubble Sort Algorithm for sorting the songs on a playlist alphabetically.
     </p>`,
-    'source': 'https://github.com/kieransukachevin/spotify-alphabetize'
+    'source': 'https://kieransukachevin.github.io/playlist-alphabetizer/'
     },
     {'title': 'Alkalinity Titrator - UI State Machine', 'img': 'assets/projects/titrator.png',
     'description': `<p>A new UI state machine framework for the UI framework for the open source Alkalinity Titrator project. 

@@ -28,6 +28,26 @@
   margin-right: 10px;
   max-width: 15px;
 }
+
+@keyframes un-focus {
+  from {transform: scale(1.02);}
+  to {transform: scale(1);}
+}
+@keyframes focus {
+  from {transform: scale(1);}
+  to {transform: scale(1.02);}
+}
+.header-area {
+  animation-name: un-focus;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+}
+.header-area:hover {
+  animation-name: focus;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+}
+
 @media (max-width: 50em) {  /* Portrait mode */
   .logo-area {
     display: inline-block;

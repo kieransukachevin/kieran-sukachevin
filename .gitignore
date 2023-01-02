@@ -2,4 +2,5 @@
 .DS_store
 
 # Ignore production folder
-/dist
+node_modules/
+dist/
