@@ -1,52 +1,70 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: '.app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
   title = 'Kieran Sukachevin';
   sticky: boolean | undefined;
-  zId: any;
   hide: boolean = true;
   opacity = 1;
-  @ViewChild('topBar') topBar: ElementRef | undefined;
+  height = 280;
+  maxHeight = 280;
+  speedChange = 10;
+  oldScroll = 0;
+  newScroll = 0;
+  overflow = "visible";
+  notLoaded = true;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {}
 
-  ngAfterViewInit(){
-    this.zId = this.topBar?.nativeElement.offsetHeight;
-  }
+  ngAfterViewInit() {}
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    const windowScroll = window.pageYOffset;
-    if(windowScroll >= this.zId){
-        this.sticky = true;
-    } else {
-        this.sticky = false;
+    if (this.notLoaded) {
+      this.oldScroll = window.scrollY;
+      this.notLoaded = false;
     }
+    this.newScroll = window.scrollY;
+    console.log(this.newScroll, this.oldScroll);
+    if ( this.newScroll - this.oldScroll >= 50 && this.hide ) {
+        this.toggleHide();
+    }
+    this.oldScroll = this.newScroll;
   }
 
   toggleHide() {
-    if (this.hide) {
+    var speed = 0;
+    if (this.hide) {  // Hide
+      this.overflow = "hidden";
       let interval = setInterval(() => {
-        this.opacity -= 0.1;
-        if (this.opacity <= 0) {
+        if (this.height > 0) {
+          speed += this.speedChange;
+          this.height -= speed;
+        }
+        else {
           this.hide = !this.hide;
-          clearInterval(interval)
+          this.height = 0;
+          clearInterval(interval);
         }
       }, 30);  
     }
-    else {
+    else {  // Reveal
       let interval = setInterval(() => {
-        this.opacity += 0.1;
-        if (this.opacity >= 1) {
+        if (this.height < this.maxHeight) {
+          speed += this.speedChange;
+          this.height += speed;
+        }
+        else {
+          this.overflow = "visible";
           this.hide = !this.hide;
-          clearInterval(interval)
+          this.height = this.maxHeight;
+          clearInterval(interval);
         }
       }, 30);
     }

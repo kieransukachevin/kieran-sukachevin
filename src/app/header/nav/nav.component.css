@@ -15,10 +15,13 @@
     font-size: small;
     padding: 0;
 }
-a:active {
-    /* color: rgb(183, 183, 183); */
+@media (max-width: 50em) {  /* Portrait mode */
+    .nav-anchor {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
-@media (min-width: 50em) and (orientation: landscape) {
+@media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
     .nav-bar {
         right: 20%;
         display: block;

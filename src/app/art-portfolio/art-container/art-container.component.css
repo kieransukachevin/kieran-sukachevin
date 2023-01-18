@@ -5,5 +5,17 @@
     display: block;
 }
 .art {
+    width: 100%;
     display: block;
+}
+@media (max-width: 50em) {  /* Portrait mode */
+    .thumbnail-image {
+        max-width: 100%;
+    }
+}
+@media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+    .thumbnail-image {
+        max-height: 90vh; 
+        max-width: 90vh;
+    }
 }
