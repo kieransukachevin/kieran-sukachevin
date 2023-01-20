@@ -16,7 +16,7 @@ export class ProjectsService {
     {'title': 'Alkalinity Titrator - UI State Machine', 'img': 'assets/projects/titrator.png',
     'description': `<p>A new UI state machine framework for the UI framework for the open source Alkalinity Titrator project. 
     The UI framework additionally includes a comprehensive test suite (unit and acceptance tests) using Pytest. 
-    This project written in Python.</p>`,
+    This project was written in Python.</p>`,
     'source': 'https://github.com/Open-Acidification/AlkalinityTitrator'
     },
     {'title': 'Lights Out', 'img': 'assets/projects/lights-out.gif', 
