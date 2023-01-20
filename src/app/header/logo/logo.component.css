@@ -1,7 +1,8 @@
 .logo-header {
   max-width: 200px;
   position: absolute;
-  margin-top: 10px;
+  top: 25%;
+  margin: auto;
 }
 .image {
   position: relative;
@@ -15,9 +16,10 @@
     width: 160px;
     margin: auto;
   }
-  h1 {
+  .logo-header {
+    margin: auto;
     text-align: center;
-    width: 160çpx;
+    width: 160px;
   }
 }
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */

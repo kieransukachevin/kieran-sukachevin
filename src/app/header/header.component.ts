@@ -7,7 +7,6 @@ import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, Elemen
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   title = 'Kieran Sukachevin';
-  sticky: boolean | undefined;
   hide: boolean = true;
   opacity = 1;
   height = 280;
@@ -15,8 +14,10 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   speedChange = 10;
   oldScroll = 0;
   newScroll = 0;
+  maxScroll = 50;
   overflow = "visible";
   notLoaded = true;
+  display = "block";
 
   constructor() {}
 
@@ -26,13 +27,18 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
+    console.log('width', window.innerWidth);
+    if (window.innerWidth > 800) {  // Return if in landscape mode
+      return;
+    }
+
     if (this.notLoaded) {
       this.oldScroll = window.scrollY;
       this.notLoaded = false;
     }
+
     this.newScroll = window.scrollY;
-    console.log(this.newScroll, this.oldScroll);
-    if ( this.newScroll - this.oldScroll >= 50 && this.hide ) {
+    if ( this.newScroll - this.oldScroll >= this.maxScroll && this.hide ) {
         this.toggleHide();
     }
     this.oldScroll = this.newScroll;
@@ -50,11 +56,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
         else {
           this.hide = !this.hide;
           this.height = 0;
+          this.display = "none";
           clearInterval(interval);
         }
       }, 30);  
     }
     else {  // Reveal
+      this.display = "block";
       let interval = setInterval(() => {
         if (this.height < this.maxHeight) {
           speed += this.speedChange;
