@@ -27,7 +27,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    console.log('width', window.innerWidth);
     if (window.innerWidth > 800) {  // Return if in landscape mode
       return;
     }
