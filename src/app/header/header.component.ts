@@ -6,7 +6,6 @@ import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, Elemen
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  title = 'Kieran Sukachevin';
   hide: boolean = true;
   height = 280;
   maxHeight = 280;
@@ -24,24 +23,33 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {}
 
+  /**
+   * Captures the scroll events and hides the header if scrolled fast
+   * @returns null
+   */
   @HostListener('window:scroll', ['$event'])
   onScroll() {
     if (window.innerWidth > 800) {  // Return if in landscape mode
       return;
     }
 
-    if (this.notLoaded) {
+    if (this.notLoaded) { // Once component has loaded, update the old scroll value
       this.oldScroll = window.scrollY;
       this.notLoaded = false;
     }
 
     this.newScroll = window.scrollY;
-    if ( this.newScroll - this.oldScroll >= this.maxScroll && this.hide ) {
+
+    if ( this.newScroll - this.oldScroll >= this.maxScroll && this.hide ) { // Hide the header if a fast scroll
         this.toggleHide();
     }
+
     this.oldScroll = this.newScroll;
   }
 
+  /**
+   * Hides or reveals the header when called
+   */
   toggleHide() {
     var speed = 0;
     if (this.hide) {  // Hide

@@ -51,12 +51,12 @@ export class InViewComponent implements OnInit, OnDestroy {
       this.element.nativeElement.style.opacity = entry.intersectionRatio + 0.2;
       this.element.nativeElement.style.blur = entry.intersectionRatio + 0.2;
 
-      this.element.nativeElement.children[0].style.animationName = 'un-focus';  // Class name comes from universal styles
+      this.element.nativeElement.children[0].style.animationName = 'small-scale';  // Class name comes from universal styles
       this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
       this.element.nativeElement.children[0].style.animationDuration = '0.2s';
     } else {
       this.element.nativeElement.style.opacity = 1.0;
-      this.element.nativeElement.children[0].style.animationName = 'focus'; // Class name comes from universal styles
+      this.element.nativeElement.children[0].style.animationName = 'large-scale'; // Class name comes from universal styles
       this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
       this.element.nativeElement.children[0].style.animationDuration = '0.2s';
     }

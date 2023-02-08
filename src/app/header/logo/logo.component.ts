@@ -11,15 +11,13 @@ export class LogoComponent implements OnInit {
   headerOpacity = 0;
   logoOpacity = 1;
 
-  constructor(
-    public element: ElementRef
-  ) {}
+  constructor(public logoArea: ElementRef) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   ngAfterViewInit() {
-    this.element.nativeElement.addEventListener("mouseover", (event: any) => {
+    // Reveal header and hide logo
+    this.logoArea.nativeElement.addEventListener("mouseover", (event: any) => {
       let interval = setInterval(() => {
         this.headerOpacity += 0.1;
         this.logoOpacity -= 0.1;
@@ -28,7 +26,9 @@ export class LogoComponent implements OnInit {
         }
       }, 70);
     });
-    this.element.nativeElement.addEventListener("mouseleave", (event: any) => {
+  
+    // Hide header and reveal logo
+    this.logoArea.nativeElement.addEventListener("mouseleave", (event: any) => {
       this.hover = false;
       let interval = setInterval(() => {
         this.headerOpacity -= 0.1;

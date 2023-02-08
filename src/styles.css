@@ -88,30 +88,52 @@ a:hover {
   text-decoration: none;
 }
 
-/* scale animation */
+/* scale animation (focusable, button) */
 
 @keyframes un-focus {
-  from {transform: scale(1.02);}
+  from {transform: scale(1.2);}
   to {transform: scale(1);}
 }
 
 @keyframes focus {
   from {transform: scale(1);}
-  to {transform: scale(1.02);}
+  to {transform: scale(1.2);}
 }
 
-.focusable,
-a,
+.larger-scale,
 button {
   animation-name: un-focus;
   animation-fill-mode: forwards;
   animation-duration: 0.2s;
 }
 
-.focusable:hover,
-a:hover,
+.larger-scale:hover,
 button:hover {
   animation-name: focus;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+}
+
+/* scale animation (in-view component and header component) */
+
+@keyframes small-scale {
+  from {transform: scale(1.02);}
+  to {transform: scale(1);}
+}
+
+@keyframes large-scale {
+  from {transform: scale(1);}
+  to {transform: scale(1.02);}
+}
+
+.smaller-scale {
+  animation-name: small-scale;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
+}
+
+.smaller-scale:hover {
+  animation-name: large-scale;
   animation-fill-mode: forwards;
   animation-duration: 0.2s;
 }

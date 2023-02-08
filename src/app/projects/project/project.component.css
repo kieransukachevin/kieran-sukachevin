@@ -36,5 +36,5 @@ h2:hover {
     text-decoration: none;
 }
 a {
-    padding: 0;
+    display: block;
 }

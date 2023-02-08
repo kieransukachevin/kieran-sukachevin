@@ -1,32 +1,38 @@
-.logo-header {
-  max-width: 200px;
+h1 {
   position: absolute;
   top: 25%;
-  margin: auto;
 }
-.image {
+
+img {
   position: relative;
   width: 160px;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
+
+.logo-area {
+  width: 160px;
+}
+
 @media (max-width: 50em) {  /* Portrait mode */
-  .logo-area {
-    margin:0;
-    display: flex;
-    width: 160px;
-    margin: auto;
-  }
-  .logo-header {
-    margin: auto;
+  h1 {
+    width: 200%;
+    left: -50%;
     text-align: center;
-    width: 160px;
+  }
+
+  .logo-area {
+    position: relative;
+    margin: auto;
+    align-items: center;
   }
 }
+
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+  h1 {
+    width: 100%;
+  }
+
   .logo-area {
-    margin:0;
-    display: flex;
     position: relative;
-    width: 160px;
   }
 }

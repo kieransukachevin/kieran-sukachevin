@@ -1,6 +1,11 @@
+
 ul {
     list-style: none;
     padding-inline-start: 0;
+}
+
+a {
+    display: block;
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
