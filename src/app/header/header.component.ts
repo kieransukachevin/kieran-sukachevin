@@ -8,7 +8,6 @@ import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, Elemen
 export class HeaderComponent implements OnInit, AfterViewInit {
   title = 'Kieran Sukachevin';
   hide: boolean = true;
-  opacity = 1;
   height = 280;
   maxHeight = 280;
   speedChange = 10;
