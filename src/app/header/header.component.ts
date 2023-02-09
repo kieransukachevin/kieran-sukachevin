@@ -7,8 +7,8 @@ import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, Elemen
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   hide: boolean = true;
-  height = 280;
-  maxHeight = 280;
+  height = 300;
+  maxHeight = 300;
   speedChange = 10;
   oldScroll = 0;
   newScroll = 0;

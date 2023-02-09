@@ -6,7 +6,7 @@ a img {
 button {
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url(/assets/menu_blue.png);
+  background-image: url("../../assets/menu_blue.png");
   background-size: cover;
   background-position: top center;
   padding: 0;
@@ -27,6 +27,11 @@ button {
   button {
     display: inline-block;
     align-items: center;
+  }
+
+  a {
+    margin-right: 0;
+    margin-left: 1rem;
   }
 }
 

@@ -1,40 +1,42 @@
 .project-area {
     margin-bottom: 150px;
-    display: block;
 }
-.project-area:after {
-    clear: both;
-    content: "";
-    display: block;
-}
-.project-image {
-    float: left;
-    max-width: 60%;
-    margin-right: 20px;
-}
-.project-header {
-    display: block;
-    font-size: medium;
-    text-align: left;
-    color: rgb(42, 97, 218);
-}
-.project-description {
-    display: block;
-    font-size: small;
-}
-.project-source {
-    float: left;
-    font-size: medium;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-h2:hover {
-    /* color: rgb(183, 183, 183);
-        */
-    color: rgb(125, 155, 219);
-    text-decoration: none;
-}
+
 a {
     display: block;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+}
+
+@media (max-width: 50em) {  /* Portrait mode */
+    p {
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+    }
+
+    .project-area {
+        display: block;
+    }
+}
+
+@media (min-width: 50em) {  /* Landscape mode */
+    .project-area {
+        display: flex;
+    }
+
+    .image-wrapper {
+        margin-right: 20px;
+        width: 60%;
+    }
+
+    .description-wrapper {
+        width: 40%;
+    }
 }

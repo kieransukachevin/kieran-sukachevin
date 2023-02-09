@@ -1,9 +1,11 @@
 <app-in-view> 
     <div class="project-area">
-        <img class="project-image" src="{{img}}">
+        <div class="image-wrapper">
+            <img src="{{img}}">
+        </div>
         <div class="description-wrapper">
-            <h2 class="project-header"><a class="smaller-scale" href="{{source}}">{{title}}</a></h2>
-            <div class="project-description" [innerHtml]="description"></div>
+            <h2><a class="smaller-scale" href="{{source}}">{{title}}</a></h2>
+            <p>{{description}}</p>
         </div>
     </div>
 </app-in-view>

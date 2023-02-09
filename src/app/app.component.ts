@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  message: string="";
   constructor() {}
 
   ngOnInit(): void {}

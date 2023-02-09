@@ -8,6 +8,11 @@
     width: 100%;
     display: block;
 }
+
+img {
+    border-radius: 1em;
+}
+
 @media (max-width: 50em) {  /* Portrait mode */
     .thumbnail-image {
         max-width: 100%;
