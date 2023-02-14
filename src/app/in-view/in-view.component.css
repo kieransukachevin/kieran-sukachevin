@@ -1,4 +1,6 @@
 
 .in-view {
-    display: block; 
+    background-color: var(--content-area-color);
+    padding: 1em;
+    border-radius: var(--smooth-edge-radius);
 }

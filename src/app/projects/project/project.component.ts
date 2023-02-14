@@ -10,6 +10,7 @@ export class Project implements OnInit {
   @Input() img: string | undefined;
   @Input() description: string | undefined;
   @Input() source: string | undefined;
+  @Input() bottomMargin: string | undefined;
 
   constructor() { }
 

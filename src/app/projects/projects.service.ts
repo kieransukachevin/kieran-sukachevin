@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ProjectsService {
-  projectsInfo = [
+  projectsInfo: Array<Object> = [
     {'title': 'Playlist Alphabetizer', 'img': 'assets/projects/playlist-alphabetizer.gif',
     'description': `Built a single-page, responsive, Angular web app that alphabetizes Spotify playlists.
     Utilized the Angular HTTP Client Module to make requests to Spotify API endpoints including OAuth
@@ -55,5 +55,9 @@ export class ProjectsService {
 
   getProjectsInfo() {
     return this.projectsInfo;
+  }
+
+  getNumberOfProjects() {
+    return this.projectsInfo.length;
   }
 }

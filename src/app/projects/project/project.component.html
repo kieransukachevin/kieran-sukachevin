@@ -1,11 +1,13 @@
-<app-in-view> 
-    <div class="project-area">
-        <div class="image-wrapper">
-            <img src="{{img}}">
+<div class="in-view-wrapper" [style.margin-bottom]="bottomMargin">
+    <app-in-view>
+        <div class="project-area">
+            <div class="image-wrapper">
+                <img src="{{img}}">
+            </div>
+            <div class="description-wrapper">
+                <h2><a class="smaller-scale" href="{{source}}">{{title}}</a></h2>
+                <p>{{description}}</p>
+            </div>
         </div>
-        <div class="description-wrapper">
-            <h2><a class="smaller-scale" href="{{source}}">{{title}}</a></h2>
-            <p>{{description}}</p>
-        </div>
-    </div>
-</app-in-view>
+    </app-in-view>
+</div>

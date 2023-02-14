@@ -8,11 +8,17 @@ import { ProjectsService } from './projects.service';
 })
 export class ProjectsComponent implements OnInit {
   projects: Array<any> | undefined;
+  projectsLength: number = 0;
+  bottomMargin: string = "5em";
 
   constructor(private projectsServ: ProjectsService) { }
 
   ngOnInit(): void {
     this.projects = this.projectsServ.getProjectsInfo();
+    this.projectsLength = this.projectsServ.getNumberOfProjects();
   }
 
+  lessThan(left: number, right: number): boolean {
+    return (left < right);
+  }
 }
