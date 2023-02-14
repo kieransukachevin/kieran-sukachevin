@@ -9,7 +9,10 @@
   /* custom properties */
   --secondary-color: rgb(42, 97, 218);
   --main-color: rgb(37, 37, 37);
-  --content-area-color: rgba(241, 241, 241, 0.822);
+  /* --back-ground-color: rgb(255, 255, 255); */
+  --back-ground-color: rgba(241, 241, 241, 0.822);
+  /* --content-area-color: rgba(241, 241, 241, 0.822);*/
+  --content-area-color: rgba(255, 255, 255, 0.822);
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0.5em;
 
@@ -18,7 +21,11 @@
   color: var(--main-color);
   background-color: transparent;
 
-} 
+}
+
+body {
+  background-color: var(--back-ground-color);
+}
 
 h1 {
   font-size: 150%;
