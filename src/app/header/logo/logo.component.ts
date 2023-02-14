@@ -17,16 +17,16 @@ export class LogoComponent implements OnInit {
 
   ngAfterViewInit() {
     // Reveal header and hide logo
-    this.logoArea.nativeElement.addEventListener("mouseover", (event: any) => {
+    this.logoArea.nativeElement.addEventListener("mouseover", (event: any) => { 
       let interval = setInterval(() => {
         this.headerOpacity += 0.1;
         this.logoOpacity -= 0.1;
         if (this.headerOpacity >= 1 || !this.hover) {
           clearInterval(interval)
         }
-      }, 70);
-    });
-  
+      }, 70);}
+    );
+
     // Hide header and reveal logo
     this.logoArea.nativeElement.addEventListener("mouseleave", (event: any) => {
       this.hover = false;

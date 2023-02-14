@@ -1,24 +1,38 @@
-.about-wrapper {
-    margin: auto;
-    display: block;
-    margin-bottom: 30px;
+img {
+    width: 100%;
 }
-.about-wrapper:after {
-    clear: both;
-    content: "";
-    display: block;
-}
-.about-image {
-    float: left;
-    max-width: 40%;
-    margin-right: 20px;
-}
-.email-source {
+
+a {
     text-align: left;
     margin: 0;
     padding: 0;
 }
 
-a {
-    display: block;
+@media (max-width: 50em) {  /* Portrait mode */
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .about-wrapper {
+        display: block;
+    }
+}
+
+@media (min-width: 50em) {  /* Landscape mode */
+    .about-wrapper {
+        display: flex;
+    }
+
+    .about-description {
+        width: 60%;
+    }
+
+    .image-wrapper {
+        margin-right: 20px;
+        width: 40%;
+    }    
 }
