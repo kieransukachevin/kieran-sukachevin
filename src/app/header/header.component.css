@@ -34,17 +34,23 @@ button {
   }
 
   .social-nav {
-    display: inline-block;
+    display: block;
   }
 
   button {
-    display: inline-block;
+    display: block;
+    margin: auto;
     align-items: center;
+  }
+
+  a {
+    margin-top: 0;
+    display: inline-block;
   }
 
   .inner-menu-area {
     margin: auto;
-    max-height: 10em;
+    max-height: 11em;
     min-width: 100%;
   }
 }
