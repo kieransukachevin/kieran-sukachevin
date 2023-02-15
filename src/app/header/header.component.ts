@@ -7,15 +7,15 @@ import { AfterContentChecked, AfterContentInit, AfterViewInit, Component, Elemen
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   hide: boolean = true;
-  height = 300;
-  maxHeight = 300;
-  speedChange = 10;
   oldScroll = 0;
   newScroll = 0;
   maxScroll = 50;
   overflow = "visible";
   notLoaded = true;
-  display = "block";
+  maxWidth = "15em"
+  maxHeight = "24em"
+  width = this.maxWidth;
+  height = this.maxHeight;
 
   constructor() {}
 
@@ -51,37 +51,17 @@ export class HeaderComponent implements OnInit, AfterViewInit {
    * Hides or reveals the header when called
    */
   toggleHide() {
-    var speed = 0;
     if (this.hide) {  // Hide
+      this.width = "0";
+      this.height = "0";
       this.overflow = "hidden";
-      let interval = setInterval(() => {
-        if (this.height > 0) {
-          speed += this.speedChange;
-          this.height -= speed;
-        }
-        else {
-          this.hide = !this.hide;
-          this.height = 0;
-          this.display = "none";
-          clearInterval(interval);
-        }
-      }, 30);  
     }
     else {  // Reveal
-      this.display = "block";
-      let interval = setInterval(() => {
-        if (this.height < this.maxHeight) {
-          speed += this.speedChange;
-          this.height += speed;
-        }
-        else {
-          this.overflow = "visible";
-          this.hide = !this.hide;
-          this.height = this.maxHeight;
-          clearInterval(interval);
-        }
-      }, 30);
+      this.width = this.maxWidth;
+      this.height = this.maxHeight;
+      this.overflow = "visible";
     }
+    this.hide = !this.hide; // Toggle hide
   }
 
 }

@@ -1,11 +1,17 @@
 .header-area {
-  /* background-color: var(--content-area-color); */
+  background-color: var(--content-area-color);
+  border-radius: var(--smooth-edge-radius);
+  width: 100%;
 }
 
 a img {
-  margin-right: 1rem;
+  margin: 0;
   max-width: 1rem;
   border-radius: 0;
+}
+
+a {
+  margin: var(--universal-margin);
 }
 
 button {
@@ -15,13 +21,15 @@ button {
   background-size: cover;
   background-position: top center;
   padding: 0;
-  margin-bottom: 1rem;
   align-items: center;
+}
+
+.inner-menu-area {
+  transition: width 0.3s, height 0.3s;
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
   .header-area {
-    background-color: white;
     overflow: hidden;
   }
 
@@ -34,15 +42,22 @@ button {
     align-items: center;
   }
 
-  a {
-    margin-right: 0;
-    margin-left: 1rem;
+  .inner-menu-area {
+    margin: auto;
+    max-height: 10em;
+    min-width: 100%;
   }
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+  .header-area {
+    position: sticky;
+    top: 1em;
+  }
+  
   .social-nav {
     display: flex;
+    justify-content: space-between;
   }
   
   button {

@@ -15,6 +15,7 @@
   --content-area-color: rgba(255, 255, 255, 0.822);
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0.5em;
+  --universal-margin: 0.5em;
 
   /* universal styles */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -61,9 +62,7 @@ button {
   font-size: 1.2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: var(--universal-margin);
   letter-spacing: 0.25em;
   outline: none;
 }

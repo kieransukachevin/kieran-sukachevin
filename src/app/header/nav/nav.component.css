@@ -6,14 +6,10 @@ ul {
 
 a {
     display: block;
+    margin: var(--universal-margin);
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
-    a {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
     li {
         display: inline-block;
     }

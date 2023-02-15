@@ -1,38 +1,48 @@
+.logo-area {
+  position: relative;
+  margin: var(--universal-margin);
+}
+
 h1 {
   position: absolute;
-  top: 25%;
+  height: 2em;
+  top: calc(50% - 2em);
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.logo-area:hover h1 {
+  opacity: 1;
 }
 
 img {
-  position: relative;
-  width: 160px;
-  margin-top: 1rem;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.4s;
 }
 
-.logo-area {
-  width: 160px;
+.logo-area:hover img {
+  opacity: 0;
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
   h1 {
-    width: 200%;
-    left: -50%;
     text-align: center;
   }
 
   .logo-area {
-    position: relative;
-    margin: auto;
-    align-items: center;
+    background-position: center;
+    height: 5em;
+    text-align: center;
   }
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
-  h1 {
-    width: 100%;
-  }
-
   .logo-area {
-    position: relative;
+    width: 100%;
+    height: 10em;
+    text-align: left;
   }
 }
