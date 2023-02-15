@@ -27,13 +27,12 @@ body {
   }
 
   .page {
+    width: 100%;
     transition-property: width;
     transition-duration: 1s;
-    /* width: 100%; */
   }
 
   .app-header {
     margin-right: 3em;
-    /* width: 15%; */
   }
 }
