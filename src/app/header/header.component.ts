@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   maxHeight = "24em"
   width = this.maxWidth;
   height = this.maxHeight;
+  h1Display = "block";
 
   constructor() {}
 
@@ -55,11 +56,13 @@ export class HeaderComponent implements OnInit, AfterViewInit {
       this.width = "0";
       this.height = "0";
       this.overflow = "hidden";
+      this.h1Display = "none";
     }
     else {  // Reveal
       this.width = this.maxWidth;
       this.height = this.maxHeight;
       this.overflow = "visible";
+      this.h1Display = "block";
     }
     this.hide = !this.hide; // Toggle hide
   }

@@ -3,7 +3,7 @@ img {
 }
 
 a {
-    display: block;
+    color: var(--secondary-color);
     text-align: left;
     margin: 0;
     padding: 0;
