@@ -1,12 +1,12 @@
 <div class="header-area smaller-scale">
-  <button (click)="toggleHide()"></button>
+  <app-hamburger-menu (click)="toggleHide()" [hide]="hide"></app-hamburger-menu>
   <div class="inner-menu-area" [style.width]="width" [style.height]="height" [style.overflow]="overflow">
-    <app-logo></app-logo>
+    <app-logo [h1Display]="h1Display"></app-logo>
     <div class="app-nav"></div>
     <div class="social-nav">
-      <a class="larger-scale" href="https://www.instagram.com/kieran_suka/"><img src="assets/insta-logo.png"></a>
-      <a class="larger-scale" href="https://github.com/kieransukachevin"><img src="assets/github-logo.png"></a>
-      <a class="larger-scale" href="https://www.linkedin.com/in/kieran-sukachevin-365a87198/"><img src="assets/linkedin-logo.png"></a>  
+      <a href="https://www.instagram.com/kieran_suka/"><img src="assets/insta-logo-white.png"></a>
+      <a href="https://github.com/kieransukachevin"><img src="assets/github-logo-white.png"></a>
+      <a href="https://www.linkedin.com/in/kieran-sukachevin-365a87198/"><img src="assets/linkedin-logo-white.png"></a>  
     </div>
   </div>
 </div>

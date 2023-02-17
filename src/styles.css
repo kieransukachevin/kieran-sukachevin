@@ -7,12 +7,16 @@
 * {
 
   /* custom properties */
-  --secondary-color: rgb(42, 97, 218);
+  --secondary-color: rgb(77, 121, 215);
+  /* --secondary-color: rgb(33, 124, 182); */
   --main-color: rgb(37, 37, 37);
   /* --back-ground-color: rgb(255, 255, 255); */
   --back-ground-color: rgba(241, 241, 241, 0.822);
   /* --content-area-color: rgba(241, 241, 241, 0.822);*/
   --content-area-color: rgba(255, 255, 255, 0.822);
+  --header-content-color: rgba(255, 255, 255, 0.9);
+  --line-border-size: 0.08em;
+  --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0.5em;
   --universal-margin: 0.5em;
@@ -49,6 +53,10 @@ p {
   font-size: small;
 }
 
+img {
+  border-radius: var(--smooth-edge-radius);
+}
+
 body, 
 input[type="text"],
 button {
@@ -78,26 +86,42 @@ button:focus {
 }
 
 a {
+  display: inline-block;
   border: none;
-  border-radius: var(--smooth-edge-radius);
-  color: var(--secondary-color);
   font-size: small;
+  color: var(--secondary-color);
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
   letter-spacing: 0.3em;
 }
 
-img {
-  border-radius: var(--smooth-edge-radius);
+a:hover {
+  text-decoration: none;
+}
+
+/* Bottom border that appears when element is hovered */
+
+a:after {
+  content: "";
+  width: 0;
+  display: block;
+  margin: auto;
+  margin-top: 0.08em;
+  transition: width 0.3s;
+  border: solid var(--line-border-size);
+  color: transparent
+}
+
+a:hover:after {
+  width: 100%;
+  color: inherit;
 }
 
 /* opacity change on hover */
 
-button:hover,
-a:hover {
+.opacity-change {
   opacity: var(--hover-opacity);
-  text-decoration: none;
 }
 
 /* scale animation (focusable, button) */

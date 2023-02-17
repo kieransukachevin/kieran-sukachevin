@@ -11,7 +11,6 @@ import {
   PLATFORM_ID,
   Renderer2,
   TemplateRef,
-  ViewChild
  } from '@angular/core';
 
 // custom component to show the contents only if in view.

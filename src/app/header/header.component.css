@@ -1,7 +1,10 @@
 .header-area {
-  background-color: var(--content-area-color);
+  background-color: var(--secondary-color);
   border-radius: var(--smooth-edge-radius);
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--universal-margin);
 }
 
 a img {
@@ -11,13 +14,19 @@ a img {
 }
 
 a {
-  margin: var(--universal-margin);
+  color: var(--header-content-color);
+}
+
+img {
+  opacity: var(--header-content-opacity);
 }
 
 button {
+  margin: 0;
+  opacity: var(--header-content-opacity);
   width: 2.5rem;
   height: 2.5rem;
-  background-image: url("../../assets/menu_blue.png");
+  background-image: url("../../assets/menu_white.png");
   background-size: cover;
   background-position: top center;
   padding: 0;
@@ -25,6 +34,9 @@ button {
 }
 
 .inner-menu-area {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   transition: width 0.3s, height 0.3s;
 }
 
@@ -64,9 +76,5 @@ button {
   .social-nav {
     display: flex;
     justify-content: space-between;
-  }
-  
-  button {
-    display: flex;
   }
 }

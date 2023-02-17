@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-logo',
@@ -6,7 +6,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-  name: string = 'assets/logo.png';
+  name: string = 'assets/logo_white.png';
+  @Input() h1Display: string | undefined;
 
   constructor(public logoArea: ElementRef) {}
 

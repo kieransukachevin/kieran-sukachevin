@@ -12,6 +12,7 @@ import { InViewComponent } from './in-view/in-view.component';
 import { ArtContainerComponent } from './art-portfolio/art-container/art-container.component';
 import { Project } from './projects/project/project.component';
 import { LogoComponent } from './header/logo/logo.component';
+import { HamburgerMenuComponent } from './header/hamburger-menu/hamburger-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LogoComponent } from './header/logo/logo.component';
     InViewComponent,
     ArtContainerComponent,
     Project,
-    LogoComponent
+    LogoComponent,
+    HamburgerMenuComponent
   ],
   imports: [
     BrowserModule,
