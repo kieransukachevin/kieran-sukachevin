@@ -15,6 +15,7 @@
   /* --content-area-color: rgba(241, 241, 241, 0.822);*/
   --content-area-color: rgba(255, 255, 255, 0.822);
   --header-content-color: rgba(255, 255, 255, 0.9);
+  --line-border-size: 0.08em;
   --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0.5em;
@@ -108,7 +109,7 @@ a:after {
   margin: auto;
   margin-top: 0.08em;
   transition: width 0.3s;
-  border: solid 0.08em;
+  border: solid var(--line-border-size);
   color: transparent
 }
 
