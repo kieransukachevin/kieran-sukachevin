@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   overflow = "visible";
   notLoaded = true;
   maxWidth = "15em"
-  maxHeight = "24em"
+  maxHeight = "23em"
   width = this.maxWidth;
   height = this.maxHeight;
   h1Display = "block";

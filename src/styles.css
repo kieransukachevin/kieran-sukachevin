@@ -19,7 +19,7 @@
   --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0.5em;
-  --universal-margin: 0.5em;
+  --universal-margin: 1em;
 
   /* universal styles */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
