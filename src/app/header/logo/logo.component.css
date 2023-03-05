@@ -1,18 +1,18 @@
 .logo-area {
-  /* margin: var(--universal-margin); */
+  position: relative;
   width: 100%;
 }
 
 h1 {
   color: var(--header-content-color);
   position: absolute;
-  margin-left: var(--universal-margin);
   height: 2em;
-  top: calc(25%);
+  top: 0;
   left: 0;
   width: 100%;
-  opacity: 0.2;
+  opacity: 0;
   transition: opacity 0.4s;
+  overflow-wrap: break-word;
 }
 
 img {
@@ -28,7 +28,7 @@ img {
 }
 
 .logo-area:hover img {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 @media (max-width: 50em) {  /* Portrait mode */

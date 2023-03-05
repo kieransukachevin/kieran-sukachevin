@@ -18,14 +18,18 @@
   --line-border-size: 0.08em;
   --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
-  --smooth-edge-radius: 0.5em;
+  --smooth-edge-radius: 0;
   --universal-margin: 1em;
+  --text-margin: 3rem;
 
   /* universal styles */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: var(--main-color);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 1.5;
+  font-size: 1rem;
   background-color: transparent;
-
 }
 
 body {
@@ -34,23 +38,25 @@ body {
 
 h1 {
   font-size: 150%;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.3em;
   text-align: left;
+  font-size: 2em;
 }
 
 h2, h3 {
-  line-height: 2;
-  letter-spacing: 0.4em;
+  line-height: 1.2;
+  font-size: 3rem;
+  letter-spacing: 0.2em;
   text-align: left;
-  font-size: medium;
+  font-weight: 800;
+  margin-bottom: var(--text-margin);
   color: var(--secondary-color);
 }
 
 p {
-  line-height: 2;
-  letter-spacing: 0.2em;
+  max-width: 40rem;
   text-align: left;
-  font-size: small;
+  margin-bottom: var(--text-margin);
 }
 
 img {
@@ -87,12 +93,10 @@ button:focus {
 
 a {
   display: inline-block;
+  font-style: italic;
   border: none;
-  font-size: small;
+  font-size: 1rem;
   color: var(--secondary-color);
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
   letter-spacing: 0.3em;
 }
 
