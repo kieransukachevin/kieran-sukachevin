@@ -6,7 +6,7 @@ import { Component, ElementRef, Input, OnInit } from '@angular/core';
   styleUrls: ['./logo.component.css']
 })
 export class LogoComponent implements OnInit {
-  name: string = 'assets/logo_white.png';
+  name: string = 'assets/logo.png';
   @Input() h1Display: string | undefined;
 
   constructor(public logoArea: ElementRef) {}

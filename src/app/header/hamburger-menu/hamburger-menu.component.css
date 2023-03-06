@@ -16,8 +16,8 @@
 /* style a line (border, color, width) */
 
 .line {
-    border: solid var(--header-content-color) var(--line-border-size);
-    background-color: var(--header-content-color);
+    border: solid var(--secondary-color) var(--line-border-size);
+    background-color: var(--secondary-color);
     width: 100%;
 }
 

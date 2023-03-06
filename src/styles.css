@@ -14,13 +14,15 @@
   --back-ground-color: rgba(241, 241, 241, 0.822);
   /* --content-area-color: rgba(241, 241, 241, 0.822);*/
   --content-area-color: rgba(255, 255, 255, 0.822);
-  --header-content-color: rgba(255, 255, 255, 0.9);
+  /* --header-content-color: rgba(255, 255, 255, 0.9); */
+  --header-content-color: rgb(37, 37, 37);
   --line-border-size: 0.08em;
   --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
   --smooth-edge-radius: 0;
   --universal-margin: 1em;
   --text-margin: 3rem;
+  --animation-speed: 0.2s;
 
   /* universal styles */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -37,26 +39,28 @@ body {
 }
 
 h1 {
-  font-size: 150%;
-  letter-spacing: 0.3em;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   text-align: left;
-  font-size: 2em;
 }
 
 h2, h3 {
   line-height: 1.2;
   font-size: 3rem;
+  font-style: italic;
   letter-spacing: 0.2em;
   text-align: left;
   font-weight: 800;
   margin-bottom: var(--text-margin);
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 
 p {
   max-width: 40rem;
   text-align: left;
-  margin-bottom: var(--text-margin);
+  margin-bottom: calc(var(--text-margin) / 2);
 }
 
 img {
@@ -67,6 +71,10 @@ body,
 input[type="text"],
 button {
   height: auto;
+}
+
+address {
+  margin: 0;
 }
 
 button {
@@ -93,7 +101,6 @@ button:focus {
 
 a {
   display: inline-block;
-  font-style: italic;
   border: none;
   font-size: 1rem;
   color: var(--secondary-color);
@@ -111,7 +118,7 @@ a:after {
   width: 0;
   display: block;
   margin: auto;
-  margin-top: 0.08em;
+  /* margin-top: 0.08em; */
   transition: width 0.3s;
   border: solid var(--line-border-size);
   color: transparent
@@ -144,14 +151,14 @@ a:hover:after {
 button {
   animation-name: un-focus;
   animation-fill-mode: forwards;
-  animation-duration: 0.2s;
+  animation-duration: var(--animation-speed);
 }
 
 .larger-scale:hover,
 button:hover {
   animation-name: focus;
   animation-fill-mode: forwards;
-  animation-duration: 0.2s;
+  animation-duration: var(--animation-speed);
 }
 
 /* scale animation (in-view component and header component) */
@@ -169,11 +176,13 @@ button:hover {
 .smaller-scale {
   animation-name: small-scale;
   animation-fill-mode: forwards;
-  animation-duration: 0.2s;
+  animation-duration: var(--animation-speed);
+  transition: box-shadow var(--animation-speed);
 }
 
 .smaller-scale:hover {
   animation-name: large-scale;
   animation-fill-mode: forwards;
-  animation-duration: 0.2s;
+  animation-duration: var(--animation-speed);
+  box-shadow: 0 0 10px 2px rgb(37, 37, 37, 0.2);
 }

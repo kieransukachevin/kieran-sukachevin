@@ -49,7 +49,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   /**
-   * Hides or reveals the header when called
+   * Hides or reveals the header
    */
   toggleHide() {
     if (this.hide) {  // Hide

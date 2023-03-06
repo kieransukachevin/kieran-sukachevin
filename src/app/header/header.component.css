@@ -1,5 +1,5 @@
 .header-area {
-  background-color: var(--secondary-color);
+  background-color: var(--content-area-color);
   border-radius: var(--smooth-edge-radius);
   width: 100%;
   display: flex;
@@ -17,7 +17,6 @@ a {
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  color: var(--header-content-color);
 }
 
 img {
