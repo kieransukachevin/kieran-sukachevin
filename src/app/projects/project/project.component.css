@@ -6,12 +6,19 @@ a {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 30rem;
+    align-self: baseline;
+    justify-self: center;
 }
 
 h2 {
     color: var(--secondary-color);
+}
+
+@media (max-width: 80em) and (min-width: 50em) {    /* Resize img */
+    img {
+        width: 20em;
+    }
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
@@ -22,23 +29,11 @@ h2 {
     h2 {
         text-align: center;
     }
-
-    .project-area {
-        display: block;
-    }
 }
 
 @media (min-width: 50em) {  /* Landscape mode */
-    .project-area {
-        display: flex;
-    }
-
-    .image-wrapper {
-        margin-right: 20px;
-        width: 60%;
-    }
-
     .description-wrapper {
-        width: 40%;
+        align-self: center;
+        justify-self: flex-start;
     }
 }

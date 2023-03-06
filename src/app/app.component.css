@@ -3,7 +3,7 @@ body {
   text-align: center;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media (max-width: 50em) {  /* Portrait mode */
@@ -27,12 +27,11 @@ body {
   }
 
   .page {
-    width: 100%;
     transition-property: width;
     transition-duration: 1s;
   }
 
   .app-header {
-    margin-right: 3em;
+    margin-right: var(--universal-margin);
   }
 }

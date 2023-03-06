@@ -1,9 +1,6 @@
 .header-area {
   background-color: var(--content-area-color);
   border-radius: var(--smooth-edge-radius);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   padding: var(--universal-margin);
 }
 
@@ -11,12 +8,6 @@ a img {
   margin: 0;
   max-width: 1rem;
   border-radius: 0;
-}
-
-a {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
 }
 
 img {
@@ -36,9 +27,6 @@ button {
 }
 
 .inner-menu-area {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   transition: width 0.3s, height 0.3s;
 }
 
@@ -58,7 +46,7 @@ button {
   }
 
   a {
-    margin-top: 0;
+    margin: 1rem;
     display: inline-block;
   }
 
@@ -74,9 +62,13 @@ button {
     position: sticky;
     top: 1em;
   }
+
+  a {
+    margin: 1rem;
+  }
   
   .social-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }

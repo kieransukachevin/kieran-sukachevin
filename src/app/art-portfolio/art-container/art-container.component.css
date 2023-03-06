@@ -2,14 +2,19 @@
     width: 100%;
 }
 
+img {
+    justify-self: center;
+    grid-column: span 2;
+}
+
 @media (max-width: 50em) {  /* Portrait mode */
-    .thumbnail-image {
+    img {
         max-width: 100%;
     }
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
-    .thumbnail-image {
+    img {
         max-height: 90vh; 
         max-width: 90vh;
     }

@@ -3,4 +3,20 @@
     background-color: var(--content-area-color);
     padding: 1em;
     border-radius: var(--smooth-edge-radius);
+    display: grid;
+    column-gap: var(--universal-margin);
+    /* min-height: calc(100vh - 60px - 2em); */
 }
+
+@media (max-width: 50em) {
+    .in-view {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 50em) {
+    .in-view {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
