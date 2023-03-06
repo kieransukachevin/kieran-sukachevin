@@ -27,7 +27,7 @@
   /* universal styles */
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: var(--main-color);
-  font-weight: 500;
+  font-weight: 350;
   letter-spacing: 0.2em;
   line-height: 1.5;
   font-size: 1rem;
@@ -104,6 +104,7 @@ a {
   border: none;
   font-size: 1rem;
   color: var(--secondary-color);
+  font-weight: 500;
 }
 
 a:hover {
