@@ -33,7 +33,7 @@
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
   line-height: 1.5;
-  font-size: 1rem;
+  font-size: 1em;
   background-color: transparent;
 }
 
@@ -54,7 +54,7 @@ h1 {
 
 h2, h3 {
   line-height: 1.2;
-  font-size: 3rem;
+  font-size: 3em;
   max-width: 30rem;
   letter-spacing: 0.2em;
   text-align: left;
@@ -62,7 +62,7 @@ h2, h3 {
   margin-top: calc(var(--text-margin) * 1.5);
   margin-bottom: calc(var(--text-margin));
   color: var(--bold-color);
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 p {
@@ -74,10 +74,6 @@ p {
 }
 
 @media (max-width: 50em) {
-  * {
-    font-size: 1rem;
-  }
-
   h2 {
     margin: auto;
     margin-top: calc(var(--text-margin) * 1.5);
