@@ -1,6 +1,7 @@
 .logo-area {
   position: relative;
   width: 100%;
+  margin-top: var(--universal-margin);
 }
 
 h1 {

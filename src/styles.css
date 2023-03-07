@@ -28,7 +28,7 @@
 
   /* universal styles */
   font-family: 'Poppins', sans-serif;
-  color: var(--bold-color);
+  color: var(--light-color);
   font-weight: 400;
   letter-spacing: 0.1em;
   word-spacing: 0.2em;
@@ -39,7 +39,6 @@
 
 body {
   margin: 0;
-  width: 100%;
   background-color: var(--back-ground-color);
 }
 
