@@ -1,6 +1,5 @@
 .contact-area {
     max-width: 30rem;
-    margin: auto;
     margin-bottom: var(--text-margin);
 }
 
@@ -10,7 +9,7 @@ img {
     justify-self: center;
 }
 
-@media (max-width: 80em) and (min-width: 50em) {    /* Resize img */
+@media (max-width: 80em) {    /* Resize img */
     img {
         width: 20em;
     }
@@ -27,6 +26,7 @@ img {
     }
     
     .contact-area {
+        margin: auto;
         text-align: center;
     }
 }

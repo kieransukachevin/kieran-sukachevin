@@ -15,7 +15,7 @@ h2 {
     color: var(--secondary-color);
 }
 
-@media (max-width: 80em) and (min-width: 50em) {    /* Resize img */
+@media (max-width: 80em) {    /* Resize img */
     img {
         width: 20em;
     }

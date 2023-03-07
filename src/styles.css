@@ -39,6 +39,7 @@
 
 body {
   margin: 0;
+  width: 100%;
   background-color: var(--back-ground-color);
 }
 
@@ -73,6 +74,10 @@ p {
 }
 
 @media (max-width: 50em) {
+  * {
+    font-size: 1rem;
+  }
+
   h2 {
     margin: auto;
     margin-top: calc(var(--text-margin) * 1.5);
