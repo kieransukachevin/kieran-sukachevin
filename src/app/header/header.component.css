@@ -4,7 +4,7 @@
   padding: var(--universal-margin);
 }
 
-a img {
+img {
   margin: 0;
   max-width: 1rem;
   border-radius: 0;
@@ -62,13 +62,10 @@ button {
     position: sticky;
     top: 1em;
   }
-
-  a {
-    margin: 1rem;
-  }
   
   .social-nav {
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }

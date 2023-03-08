@@ -12,8 +12,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   maxScroll = 50;
   overflow = "visible";
   notLoaded = true;
-  maxWidth = "10em";
-  maxHeight = "25em";
+  maxWidth = "8em";
+  maxHeight = "24em";
   width = this.maxWidth;
   height = this.maxHeight;
   h1Display = "block";

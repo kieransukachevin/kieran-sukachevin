@@ -16,6 +16,10 @@ a {
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
+    a {
+        margin-left: 0;
+    }
+    
     li {
         text-align: left;
         margin: auto;
