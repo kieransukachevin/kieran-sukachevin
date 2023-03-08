@@ -1,34 +1,13 @@
 .contact-area {
     max-width: 30rem;
     margin-bottom: var(--text-margin);
+    text-align: center;
 }
 
 img {
     width: 30rem;
     align-self: baseline;
     justify-self: center;
-}
-
-@media (max-width: 80em) {    /* Resize img */
-    img {
-        width: 20em;
-    }
-}
-
-
-@media (max-width: 50em) {  /* Portrait mode */
-    p {
-        text-align: center;
-    }
-
-    h2 {
-        text-align: center;
-    }
-    
-    .contact-area {
-        margin: auto;
-        text-align: center;
-    }
 }
 
 @media (min-width: 50em) {  /* Landscape mode */

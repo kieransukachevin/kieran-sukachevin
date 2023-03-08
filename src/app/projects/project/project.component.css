@@ -16,25 +16,9 @@ h2 {
     color: var(--secondary-color);
 }
 
-@media (max-width: 80em) {    /* Resize img */
-    img {
-        width: 20em;
-    }
-}
-
-@media (max-width: 50em) {  /* Portrait mode */
-    p {
-        text-align: center;
-    }
-
-    h2 {
-        text-align: center;
-    }
-}
-
 @media (min-width: 50em) {  /* Landscape mode */
     .description-wrapper {
-        align-self: center;
+        align-self: flex-end;
         justify-self: flex-start;
     }
 }

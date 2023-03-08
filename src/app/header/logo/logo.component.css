@@ -16,6 +16,7 @@ h1 {
 }
 
 img {
+  height: 100%;
   opacity: var(--header-content-opacity);
   transition: opacity 0.4s;
 }
@@ -30,20 +31,10 @@ img {
   opacity: 0;
 }
 
-@media (max-width: 50em) {  /* Portrait mode */
-  h1 {
-    text-align: center;
-  }
-
-  img {
-    height: 100%;
-  }
-
-  .logo-area {
-    background-position: center;
-    height: 5em;
-    text-align: center;
-  }
+.logo-area {
+  background-position: center;
+  height: 5em;
+  text-align: center;
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
@@ -54,6 +45,7 @@ img {
   }
 
   img {
+    height: auto;
     width: 100%;
   }
 }

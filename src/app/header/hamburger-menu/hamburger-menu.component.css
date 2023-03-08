@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: auto;
 }
 
 /* style a line (border, color, width) */
@@ -115,11 +116,9 @@
     }
 }
 
-@media(max-width: 50em) {   /* Portrait mode */
-    .main-wrapper {
-        margin: auto;
-    }
-}
 
 @media(min-width: 50em) { /* Landscape mode */
+    .main-wrapper {
+        margin: 0;
+    }
 }

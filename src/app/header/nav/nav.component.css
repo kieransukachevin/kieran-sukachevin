@@ -5,14 +5,12 @@ ul {
     padding-inline-start: 0;
 }
 
-a {
-    margin: 1rem;
+li {
+    display: inline-block;
 }
 
-@media (max-width: 50em) {  /* Portrait mode */
-    li {
-        display: inline-block;
-    }
+a {
+    margin: 1rem;
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
@@ -21,6 +19,7 @@ a {
     }
     
     li {
+        display: block;
         text-align: left;
         margin: auto;
     }

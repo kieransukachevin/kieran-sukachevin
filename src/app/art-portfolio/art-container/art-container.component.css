@@ -5,12 +5,7 @@
 img {
     justify-self: center;
     grid-column: span 2;
-}
-
-@media (max-width: 50em) {  /* Portrait mode */
-    img {
-        max-width: 100%;
-    }
+    max-width: 100%;
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
