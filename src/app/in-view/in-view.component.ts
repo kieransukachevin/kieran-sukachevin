@@ -22,7 +22,7 @@ import {
 export class InViewComponent implements OnInit, OnDestroy {
   observer: IntersectionObserver | undefined;
   options = {
-    threshold: [0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4]
+    threshold: [0.4]
   }
   viewable = false;
 
@@ -48,25 +48,29 @@ export class InViewComponent implements OnInit, OnDestroy {
   inView(entry: any) {
     if (entry.intersectionRatio <= 0.4) {
 
-      // Remove box-shadow
-      this.element.nativeElement.children[0].style.boxShadow = "none";
+    //   // Remove box-shadow
+    //   this.element.nativeElement.children[0].style.boxShadow = "none";
 
-      // Remove scale-animation
-      this.element.nativeElement.children[0].style.animationName = 'small-scale';  // Class name comes from universal styles
-      this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
-      this.element.nativeElement.children[0].style.animationDuration = '0.2s';
+    //   // Remove scale-animation
+    //   this.element.nativeElement.children[0].style.animationName = 'small-scale';  // Class name comes from universal styles
+    //   this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
+    //   this.element.nativeElement.children[0].style.animationDuration = '0.2s';
 
     } 
     else {
-
-      // Add box-shadow
-      this.element.nativeElement.children[0].style.boxShadow = "0 0 10px 2px rgb(37, 37, 37, 0.2)";
-
-      // Add scale animation
-      this.element.nativeElement.children[0].style.animationName = 'large-scale'; // Class name comes from universal styles
+      this.element.nativeElement.children[0].style.animationName = 'animation-keyframes';
+      this.element.nativeElement.children[0].style.animationDirection = 'normal';
       this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
-      this.element.nativeElement.children[0].style.animationDuration = '0.2s';
-      
+      this.element.nativeElement.children[0].style.animationDuration = '0.5s';
+
+    //   // Add box-shadow
+    //   this.element.nativeElement.children[0].style.boxShadow = "0 0 10px 2px rgb(37, 37, 37, 0.2)";
+
+    //   // Add scale animation
+    //   this.element.nativeElement.children[0].style.animationName = 'large-scale'; // Class name comes from universal styles
+    //   this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
+    //   this.element.nativeElement.children[0].style.animationDuration = '0.2s';
+    
     }
   }
 
