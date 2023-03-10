@@ -1,16 +1,15 @@
-.art {
-    width: 100%;
-}
-
 img {
     justify-self: center;
     grid-column: span 2;
-    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 @media (min-width: 50em) and (orientation: landscape) { /* Landscape mode */
     img {
-        max-height: 90vh; 
-        max-width: 90vh;
+        min-height: 30em; 
+        max-height: 90vh;
+        max-width: 100%;
+        width: auto;
     }
 }

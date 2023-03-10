@@ -53,9 +53,9 @@ body {
 
 h1 {
   font-family: 'Bitter', serif;
-  font-size: 2rem;
+  font-size: 1.8em;
   line-height: 1.2;
-  font-weight: 800;
+  font-weight: 500;
   letter-spacing: 0.2em;
   text-align: center;
   color: var(--bold-color);
@@ -64,12 +64,12 @@ h1 {
 h2, h3 {
   font-family: 'Bitter', serif;
   line-height: 1.2;
-  font-size: 3em;
+  font-size: 2em;
   max-width: 30rem;
   letter-spacing: 0.2em;
   word-spacing: 0.1em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 500;
   margin-left: auto;
   margin-right: auto;
   margin-top: calc(var(--text-margin) * 1.5);
@@ -87,6 +87,7 @@ p {
 }
 
 img {
+  max-width: 20em;
   border-radius: var(--smooth-edge-radius);
 }
 
@@ -153,17 +154,19 @@ a:active {
 
 /* Landscape */
 
-@media (max-width: 80em) {
+
+@media (min-width: 80em) {
   h2 {
-    font-size: 2em;
+    font-size: 3em;
+  }
+  
+  img {
+    max-width: 30em;
   }
 
-  img {
-      max-width: 20em;
-  }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 50em) {f
   h1,
   h2,
   p {

@@ -1,5 +1,8 @@
 
 .in-view {
+    position: relative;
+    top: 30px;
+    opacity: 0.3;
     background-color: var(--content-area-color);
     padding: 1em;
     border-radius: var(--smooth-edge-radius);
@@ -11,6 +14,17 @@
 @media (min-width: 50em) {  /* Lanscape */
     .in-view {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@keyframes animation-keyframes {
+    from {
+        transform: translate(0, 0);
+        opacity: 0.3;
+    }
+    to {
+        transform: translate(0, -30px);
+        opacity: 1;
     }
 }
 

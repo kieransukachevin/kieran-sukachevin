@@ -1,7 +1,7 @@
-<div class="in-view-wrapper" [style.margin-bottom]="bottomMargin">
+<div #projWrap class="in-view-wrapper" [style.margin-bottom]="bottomMargin">
     <app-in-view>
-        <img src="{{img}}">
-        <div class="description-wrapper">
+        <img alt="Project {{title}} preview gif" src="{{img}}">
+        <div #projDesc class="description-wrapper">
             <h2><a href="{{source}}">{{title}}</a></h2>
             <p>{{description}}</p>
         </div>

@@ -6,17 +6,15 @@ import { Injectable } from '@angular/core';
 export class ProjectsService {
   projectsInfo: Array<Object> = [
     {'title': 'Playlist Alphabetizer', 'img': 'assets/projects/playlist-alphabetizer.gif',
-    'description': `Built a single-page, responsive, Angular web app that alphabetizes Spotify playlists.
-    Utilized the Angular HTTP Client Module to make requests to Spotify API endpoints including OAuth
-    authorization, retrieving user listening data, and retrieving and modifying user playlists.
-    Leveraged the Angular component structure and created a shared service module used for HTTP requests, data
-    retrieval, and parsing JSON.`,
+    'description': `Built a single-page, responsive, Angular web app that displays and alphabetizes Spotify playlists. 
+    Created a shared service-module that handles HTTP requests to Spotify endpoints, including OAuth authorization, "get" requests for data retrieval, and "put" requests for editing playlists. 
+    Designed and implemented the UI with custom Angular components that dynamically display content retrieved from the service-module.`,
     'source': 'https://kieransukachevin.github.io/playlist-alphabetizer/'
     },
     {'title': 'Alkalinity Titrator - UI State Machine', 'img': 'assets/projects/titrator.png',
-    'description': `Built a new UI framework for the open-source Alkalinity Titrator project (a device that performs the titration
-      process on a sample of water) using a Python class based, state machine approach.
-      Created a comprehensive unit and acceptance testing test suite for the UI state machine framework using Pytest.`,
+    'description': `Built a new UI framework for the open-source Alkalinity Titrator project (a device that performs the titration process on a
+    sample of water) using a Python, class based, state machine approach.
+    Created a comprehensive unit and acceptance test suite for the UI state machine framework using Pytest.`,
     'source': 'https://github.com/Open-Acidification/AlkalinityTitrator'
     },
     {'title': 'Theatre Simulator', 'img': 'assets/projects/theatre-simulator.jpeg', 
@@ -25,10 +23,9 @@ export class ProjectsService {
     'source': 'https://github.com/kieransukachevin/theatre-seating-simulator'
     },
     {'title': 'Personal Website', 'img': 'assets/projects/personal-website.gif',
-    'description': `This website! Built a single-page, responsive, Angular website featuring my projects and art.
-     Created dynamic CSS changes for elements (including changes in opacity, element positioning, and animation),
-    leveraging component and template data binding.
-     Wrote custom HTML for Angular templates and CSS for styling and varying media types.`,
+    'description': `This website! Built a single-page, mobile-first, responsive, Angular website featuring my software projects and art.
+    Created dynamic CSS changes for DOM elements (including changes in opacity, element positioning, and animation) for an interactive user experience, leveraging component and template data-binding.
+    Designed the styling and layouts with semantic HTML, CSS variables, and media queries.`,
     'source': 'https://github.com/kieransukachevin/kieran-sukachevin'
     },
     {'title': 'Future Frog', 'img': 'assets/projects/future-frog.gif',
@@ -39,14 +36,12 @@ export class ProjectsService {
     },
     {'title': 'Drawit', 'img': 'assets/projects/drawit.png',
     'description': `Built an Android drawing app in Java using the Android SDK.
-    Implemented an Object-Oriented design approach, utilizing the built in Path, Paint, and Canvas classes to enable simulated drawing on the screen.`,
+    Implemented an Object-Oriented design approach, utilizing the built in Path, Paint, and Canvas classes to enable simulate drawing on the screen.`,
     'source': 'https://github.com/kieransukachevin/Drawit'
     },
     {'title': 'Lights Out', 'img': 'assets/projects/lights-out.gif', 
-    'description': `Night has come and to keep the monster away, you can't let your house go dark. Survive as long as you can by keeping the lights on.
-    Built a simple 2D video game using the Flame package for Flutter as the game engine and 
-    uses the Flutter SDK structure to componentize game parts (player, door, background, etc).
-    Created original artwork as sprites and other assets for this game.`,
+    'description': `Built a Flutter app 2D arcade-style game utilizing the Flame package for Flutter as the game engine.
+    Leveraged the Flutter framework to create components for the game parts (player, door, background, etc).`,
     'source': 'https://github.com/kieransukachevin/Lights-Out'
     },
   ]
