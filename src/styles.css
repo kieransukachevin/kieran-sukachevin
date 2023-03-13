@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Work+Sans:wght@300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Work+Sans:wght@300;400&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=DM+Serif+Text&family=Work+Sans:wght@300;400&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;500;600&family=Roboto+Serif:wght@300;400;500&family=Work+Sans:wght@300;400;500&display=swap');
+
 
 /* GENERAL STYLES */
 /* Mobile first styles */
@@ -9,7 +12,7 @@
   --secondary-color: rgb(77, 121, 215);
   /* --secondary-color: rgb(33, 124, 182); */
   --bold-color: rgb(52, 52, 52);
-  --light-color: rgb(68, 68, 68);
+  --light-color: rgb(58, 58, 58);
   /* --back-ground-color: rgb(255, 255, 255); */
   --back-ground-color: rgba(241, 241, 241, 0.822);
   /* --content-area-color: rgba(241, 241, 241, 0.822);*/
@@ -23,6 +26,7 @@
   --universal-margin: 1em;
   --text-margin: 3rem;
   --animation-speed: 0.2s;
+  --secondary-font: 'Work Sans', serif;
 
   /* universal styles */
   font-family: 'Work Sans', sans-serif;
@@ -38,9 +42,9 @@ address,
 .normal-font-style {
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   word-spacing: 0.1em;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 0.9em;
 }
 
@@ -52,7 +56,7 @@ body {
 }
 
 h1 {
-  font-family: 'Bitter', serif;
+  font-family: var(--secondary-font);
   font-size: 1.8em;
   line-height: 1.2;
   font-weight: 500;
@@ -62,11 +66,11 @@ h1 {
 }
 
 h2, h3 {
-  font-family: 'Bitter', serif;
+  font-family: var(--secondary-font);
   line-height: 1.2;
   font-size: 2em;
   max-width: 30rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   word-spacing: 0.1em;
   text-align: center;
   font-weight: 500;
@@ -119,6 +123,7 @@ button:focus {
 }
 
 a {
+  font-family: var(--secondary-font);
   display: inline-block;
   border: none;
   color: var(--secondary-color);
