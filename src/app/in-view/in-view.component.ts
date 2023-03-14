@@ -3,6 +3,7 @@ import {
   ContentChild,
   ElementRef,
   EventEmitter,
+  HostListener,
   Inject,
   Input,
   OnDestroy,
@@ -22,7 +23,7 @@ import {
 export class InViewComponent implements OnInit, OnDestroy {
   observer: IntersectionObserver | undefined;
   options = {
-    threshold: [0.4]
+    threshold: [0, 0.1, 0.4]
   }
   viewable = false;
 
@@ -32,6 +33,10 @@ export class InViewComponent implements OnInit, OnDestroy {
     this.observer = new IntersectionObserver(this.intersectionCallback.bind(this), this.options);
     this.observer.observe(this.element.nativeElement);
     this.element.nativeElement.children[0].style.transition = "box-shadow var(--animation-speed)";
+
+    if (this.element.nativeElement.getBoundingClientRect().top < (window.innerHeight - window.innerHeight / 10 )) {
+      this.element.nativeElement.children[0].classList.add('transition');
+    }
   }
 
   intersectionCallback(entries: any, observer: any): void {
@@ -45,8 +50,23 @@ export class InViewComponent implements OnInit, OnDestroy {
     });
   }
 
+  // @HostListener('window:scroll', ['event'])
+  // scroll(event: any) {
+  //   console.log('top:', this.element.nativeElement.getBoundingClientRect().top)
+
+  //   if (this.element.nativeElement.getBoundingClientRect().top < (window.innerHeight - window.innerHeight / 4 )) {
+  //     this.element.nativeElement.children[0].classList.add('transition');
+  //   }
+
+  //   if (this.element.nativeElement.getBoundingClientRect().top > window.innerHeight) {
+  //     this.element.nativeElement.children[0].classList.remove('transition');
+  //   }
+  // }
+
   inView(entry: any) {
+    // console.log('top:', entry.boundingClientRect.top, 'window:', window.innerHeight, 'intersection:', entry.intersectionRatio);
     if (entry.intersectionRatio <= 0.4) {
+      // this.element.nativeElement.children[0].classList.remove('transition');
 
     //   // Remove box-shadow
     //   this.element.nativeElement.children[0].style.boxShadow = "none";
@@ -58,10 +78,11 @@ export class InViewComponent implements OnInit, OnDestroy {
 
     } 
     else {
-      this.element.nativeElement.children[0].style.animationName = 'animation-keyframes';
-      this.element.nativeElement.children[0].style.animationDirection = 'normal';
-      this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
-      this.element.nativeElement.children[0].style.animationDuration = '0.5s';
+      // this.element.nativeElement.children[0].style.animationName = 'animation-keyframes';
+      // this.element.nativeElement.children[0].style.animationDirection = 'normal';
+      // this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
+      // this.element.nativeElement.children[0].style.animationDuration = '0.5s';
+      this.element.nativeElement.children[0].classList.add('transition');
 
     //   // Add box-shadow
     //   this.element.nativeElement.children[0].style.boxShadow = "0 0 10px 2px rgb(37, 37, 37, 0.2)";

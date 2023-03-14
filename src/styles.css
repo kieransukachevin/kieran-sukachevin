@@ -26,7 +26,7 @@
   --universal-margin: 1em;
   --text-margin: 3rem;
   --animation-speed: 0.2s;
-  --secondary-font: 'Work Sans', serif;
+  --secondary-font: 'Work Sans', sans-serif;
 
   /* universal styles */
   font-family: 'Work Sans', sans-serif;

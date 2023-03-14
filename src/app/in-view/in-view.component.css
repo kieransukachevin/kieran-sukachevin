@@ -1,7 +1,11 @@
+* {
+    --top-offset: 40px;
+}
+
 
 .in-view {
     position: relative;
-    top: 30px;
+    top: var(--top-offset);
     opacity: 0.3;
     background-color: var(--content-area-color);
     padding: 1em;
@@ -9,6 +13,14 @@
     display: grid;
     column-gap: var(--universal-margin);
     grid-template-columns: 1fr;
+    transition: top 1s;
+}
+
+.transition {
+    animation-name: animation-keyframes;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
 }
 
 @media (min-width: 50em) {  /* Lanscape */
@@ -23,7 +35,7 @@
         opacity: 0.3;
     }
     to {
-        transform: translate(0, -30px);
+        transform: translate(0, calc(-1 * var(--top-offset)));
         opacity: 1;
     }
 }
