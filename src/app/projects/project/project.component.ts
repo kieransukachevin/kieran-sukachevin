@@ -12,7 +12,13 @@ export class Project implements OnInit, AfterViewInit {
   @Input() source: string | undefined;
   @Input() bottomMargin: string | undefined;
 
-  positionFactor = 0.15;
+  intersectionObserver: IntersectionObserver | undefined;
+  threshold = {
+    threshold: Array.from(new Array(11), (_, i) => {return i * 0.1})
+  };
+  wrapperHeight: Number | undefined;
+
+  positionFactor = 0.1;
   @ViewChild('projWrap') projWrap: ElementRef = new ElementRef('temp');
   @ViewChild('projDesc') projDesc: ElementRef = new ElementRef('temp');
 
@@ -20,19 +26,35 @@ export class Project implements OnInit, AfterViewInit {
 
   ngOnInit(): void {}
 
-  ngAfterViewInit(): void {}
+  ngAfterViewInit(): void {
+    this.wrapperHeight = this.projWrap.nativeElement.getBoundingClientRect().height;
 
-  @HostListener('window:scroll')
-  onScroll() {
-    let topPos = this.projWrap?.nativeElement.getBoundingClientRect().top;  // Wrapper position relative to top
+    let callback = (entries: any) => {
+      entries.forEach((entry: any) => {
+        if (entry.isIntersecting) {
 
-    if (topPos > 0 && topPos < window.innerHeight) {  // Element within view window
-
-      // Update description top position based on wrapper top position
-      this.projDesc.nativeElement.style.top = `
-        ${-((topPos / window.innerHeight) * this.positionFactor) * 100}%
-      `;
-
+          this.projDesc.nativeElement.style.top = `${-entry.intersectionRatio * 100 * this.positionFactor}%`;
+  
+        }
+      });
     }
+  
+    this.intersectionObserver = new IntersectionObserver(callback, this.threshold);
+    this.intersectionObserver.observe(this.projWrap.nativeElement);
+  
   }
+
+  // @HostListener('window:scroll')
+  // onScroll() {
+  //   let topPos = this.projWrap?.nativeElement.getBoundingClientRect().top;  // Wrapper position relative to top
+
+  //   if (topPos > 0 && topPos < window.innerHeight) {  // Element within view window
+
+  //     // Update description top position based on wrapper top position
+  //     this.projDesc.nativeElement.style.top = `
+  //       ${-((topPos / window.innerHeight) * this.positionFactor) * 100}%
+  //     `;
+
+  //   }
+  // }
 }
