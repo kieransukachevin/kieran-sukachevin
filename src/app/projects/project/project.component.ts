@@ -7,10 +7,11 @@ import { AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, View
 })
 export class Project implements OnInit, AfterViewInit {
   @Input() title: string | undefined;
-  @Input() img: string | undefined;
+  @Input() media: string | undefined;
   @Input() description: string | undefined;
   @Input() source: string | undefined;
   @Input() bottomMargin: string | undefined;
+  isImg = false;
 
   intersectionObserver: IntersectionObserver | undefined;
   threshold = {
@@ -24,7 +25,14 @@ export class Project implements OnInit, AfterViewInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+    // Check if media is img or video 
+    if (this.media?.includes('png')) {
+      this.isImg = true;
+    }
+
+  }
 
   ngAfterViewInit(): void {
     this.wrapperHeight = this.projWrap.nativeElement.getBoundingClientRect().height;

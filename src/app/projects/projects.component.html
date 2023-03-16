@@ -1,8 +1,8 @@
 <div *ngFor="let p of projects; index as i">
     <div *ngIf="lessThan(i, projectsLength - 1); else noBottomMargin">
-        <app-project [title]="p['title']" [img]="p['img']" [description]="p['description']" [source]="p['source']" [bottomMargin]="bottomMargin"></app-project>
+        <app-project [title]="p['title']" [media]="p['media']" [description]="p['description']" [source]="p['source']" [bottomMargin]="bottomMargin"></app-project>
     </div>
     <ng-template #noBottomMargin>
-        <app-project [title]="p['title']" [img]="p['img']" [description]="p['description']" [source]="p['source']"></app-project>
+        <app-project [title]="p['title']" [media]="p['media']" [description]="p['description']" [source]="p['source']"></app-project>
     </ng-template>
 </div>

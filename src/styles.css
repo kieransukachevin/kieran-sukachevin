@@ -22,7 +22,7 @@
   --line-border-size: 0.05em;
   --header-content-opacity: 0.9;
   --hover-opacity: 0.7;
-  --smooth-edge-radius: 0;
+  --smooth-edge-radius: 0.5em;
   --universal-margin: 1em;
   --text-margin: 3rem;
   --animation-speed: 0.2s;
@@ -90,7 +90,8 @@ p {
   margin-bottom: var(--text-margin);
 }
 
-img {
+img,
+video {
   max-width: 20em;
   border-radius: var(--smooth-edge-radius);
 }
@@ -165,7 +166,8 @@ a:active {
     font-size: 3em;
   }
   
-  img {
+  img,
+  video {
     max-width: 30em;
   }
 

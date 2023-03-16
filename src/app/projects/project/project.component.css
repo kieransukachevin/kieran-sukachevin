@@ -12,6 +12,12 @@ img {
     justify-self: center;
 }
 
+video {
+    width: 30rem;
+    align-self: flex-start;
+    justify-self: center;
+}
+
 h2 {
     color: var(--secondary-color);
 }
