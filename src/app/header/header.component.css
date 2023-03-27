@@ -1,6 +1,6 @@
 .header-area {
   background-color: var(--content-area-color);
-  border-radius: var(--smooth-edge-radius);
+  /* border-radius: var(--smooth-edge-radius); */
   padding: var(--universal-margin);
 }
 

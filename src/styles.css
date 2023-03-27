@@ -10,7 +10,7 @@
 
   /* custom properties */
   --secondary-color: rgb(77, 121, 215);
-  /* --secondary-color: rgb(33, 124, 182); */
+  /* --secondary-color: rgb(230, 114, 103); */
   --bold-color: rgb(52, 52, 52);
   --light-color: rgb(58, 58, 58);
   /* --back-ground-color: rgb(255, 255, 255); */
@@ -93,7 +93,8 @@ p {
 img,
 video {
   max-width: 20em;
-  border-radius: var(--smooth-edge-radius);
+  margin: var(--universal-margin);
+  /* border-radius: var(--smooth-edge-radius); */
 }
 
 address {

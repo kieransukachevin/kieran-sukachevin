@@ -4,16 +4,36 @@
 
 
 .in-view {
+    color: var(--secondary-color);
     position: relative;
     top: var(--top-offset);
     opacity: 0.3;
     background-color: var(--content-area-color);
-    padding: 1em;
-    border-radius: var(--smooth-edge-radius);
+    /* padding: 1em; */
+    padding-bottom: 0;
+    /* border-radius: var(--smooth-edge-radius); */
     display: grid;
     column-gap: var(--universal-margin);
     grid-template-columns: 1fr;
     transition: top 1s;
+}
+
+.in-view:after {
+    background-color: var(--secondary-color);
+    height: 0.25rem;
+    grid-column-start: span 2;
+    content: "";
+    width: 0;
+    display: block;
+    color: inherit;
+    margin: auto;
+    margin-top: 0.5em;
+    transition: width 0.3s;
+}
+
+.visible:after {
+    width: 100%;
+    color: inherit;
 }
 
 .transition {

@@ -7,7 +7,7 @@ import { ProjectsService } from './projects.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Array<any> | undefined;
+  projects: Array<any> = [];
   projectsLength: number = 0;
   bottomMargin: string = "5em";
 

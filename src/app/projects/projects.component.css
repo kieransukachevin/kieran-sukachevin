@@ -1,0 +1,19 @@
+.projects-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inner-wrapper {
+    position: absolute;
+}
+
+.projects-wrapper {
+    position: fixed;
+}
+
+@media (min-width: 50em) {
+    .projects-wrapper {
+        width: 80vw;
+    }
+}

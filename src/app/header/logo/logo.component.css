@@ -16,6 +16,7 @@ h1 {
 }
 
 img {
+  margin: 0;
   height: 100%;
   opacity: var(--header-content-opacity);
   transition: opacity 0.4s;

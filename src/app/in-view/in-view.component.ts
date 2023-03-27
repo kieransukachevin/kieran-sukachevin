@@ -66,6 +66,7 @@ export class InViewComponent implements OnInit, OnDestroy {
   inView(entry: any) {
     // console.log('top:', entry.boundingClientRect.top, 'window:', window.innerHeight, 'intersection:', entry.intersectionRatio);
     if (entry.intersectionRatio <= 0.4) {
+      this.element.nativeElement.children[0].classList.remove('visible');
       // this.element.nativeElement.children[0].classList.remove('transition');
 
     //   // Remove box-shadow
@@ -83,6 +84,7 @@ export class InViewComponent implements OnInit, OnDestroy {
       // this.element.nativeElement.children[0].style.animationFillMode = 'forwards';
       // this.element.nativeElement.children[0].style.animationDuration = '0.5s';
       this.element.nativeElement.children[0].classList.add('transition');
+      this.element.nativeElement.children[0].classList.add('visible');
 
     //   // Add box-shadow
     //   this.element.nativeElement.children[0].style.boxShadow = "0 0 10px 2px rgb(37, 37, 37, 0.2)";

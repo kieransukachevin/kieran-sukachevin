@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -27,7 +27,7 @@ export class Project implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
 
-    // Check if media is img or video 
+    // Check if media is img or video.
     if (this.media?.includes('png')) {
       this.isImg = true;
     }
@@ -51,18 +51,4 @@ export class Project implements OnInit, AfterViewInit {
     this.intersectionObserver.observe(this.projWrap.nativeElement);
   
   }
-
-  // @HostListener('window:scroll')
-  // onScroll() {
-  //   let topPos = this.projWrap?.nativeElement.getBoundingClientRect().top;  // Wrapper position relative to top
-
-  //   if (topPos > 0 && topPos < window.innerHeight) {  // Element within view window
-
-  //     // Update description top position based on wrapper top position
-  //     this.projDesc.nativeElement.style.top = `
-  //       ${-((topPos / window.innerHeight) * this.positionFactor) * 100}%
-  //     `;
-
-  //   }
-  // }
 }
