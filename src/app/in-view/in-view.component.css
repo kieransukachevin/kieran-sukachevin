@@ -21,7 +21,6 @@
 .in-view:after {
     background-color: var(--secondary-color);
     height: 0.25rem;
-    grid-column-start: span 2;
     content: "";
     width: 0;
     display: block;
@@ -46,6 +45,10 @@
 @media (min-width: 50em) {  /* Lanscape */
     .in-view {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .in-view:after {
+        grid-column-start: span 2;
     }
 }
 
