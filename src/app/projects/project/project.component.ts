@@ -1,11 +1,11 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, OnChanges, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, HostListener, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChanges, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
-export class Project implements OnInit, AfterViewInit {
+export class Project implements OnInit, AfterViewInit, OnDestroy {
   @Input() title: string | undefined;
   @Input() media: string | undefined;
   @Input() description: string | undefined;
@@ -49,6 +49,9 @@ export class Project implements OnInit, AfterViewInit {
   
     this.intersectionObserver = new IntersectionObserver(callback, this.threshold);
     this.intersectionObserver.observe(this.projWrap.nativeElement);
-  
+  }
+
+  ngOnDestroy(): void {
+    this.intersectionObserver?.disconnect();
   }
 }
