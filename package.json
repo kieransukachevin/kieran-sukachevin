@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "homepage": "https://kieransukachevin.github.io/kieran-sukachevin",
-    "deploy": "ng build && ng deploy --base-href=/kierans-website/"
+    "deploy": "ng build && ng deploy --base-href=/kieran-sukachevin/"
   },
   "private": true,
   "dependencies": {
