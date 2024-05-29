@@ -13,7 +13,6 @@ import { ArtContainerComponent } from "./art-portfolio/art-container/art-contain
 import { Project } from "./projects/project/project.component";
 import { LogoComponent } from "./header/logo/logo.component";
 import { HamburgerMenuComponent } from "./header/hamburger-menu/hamburger-menu.component";
-import { BrowserDynamicTestingModule } from "@angular/platform-browser-dynamic/testing";
 
 @NgModule({
   declarations: [
@@ -28,12 +27,7 @@ import { BrowserDynamicTestingModule } from "@angular/platform-browser-dynamic/t
     LogoComponent,
     HamburgerMenuComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    BrowserDynamicTestingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   exports: [
     AppComponent,
     NavComponent,

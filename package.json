@@ -10,7 +10,8 @@
     "lint": "eslint",
     "test": "ng test",
     "homepage": "https://kieransukachevin.github.io/kieran-sukachevin",
-    "deploy": "ng build && ng deploy --base-href=/kieran-sukachevin/"
+    "deploy": "ng build && ng deploy --base-href=/kieran-sukachevin/",
+    "postinstall": "ngcc"
   },
   "private": true,
   "dependencies": {
