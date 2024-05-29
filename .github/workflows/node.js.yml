@@ -30,6 +30,6 @@ jobs:
       - run: pnpm install
       - run: pnpm run lint
       - run: pnpm tsc
-      - run: pnpm run test
+      - run: pnpm run test --karma-config=karma-ci.conf.js
       - run: pnpm run build
       - run: pnpm run deploy
