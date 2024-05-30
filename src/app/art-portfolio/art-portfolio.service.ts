@@ -1,14 +1,14 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable, OnInit } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ArtPortfolioService {
   artNames: Array<string> = [];
-  numberOfNames: number = 22;
+  numberOfNames: number = 8;
 
   constructor() {
-    this.artNames = Array.from(Array(this.numberOfNames), (_,x) => String(x))
+    this.artNames = Array.from(Array(this.numberOfNames), (_, x) => String(x));
   }
 
   getArtNames(): Array<string> {
