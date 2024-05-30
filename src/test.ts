@@ -39,3 +39,6 @@ TestBed.initTestEnvironment(
   platformBrowserDynamicTesting(),
   { teardown: { destroyAfterEach: true } }
 );
+TestBed.configureTestingModule({
+  imports: [GlobalTestingSetupModule]
+});
