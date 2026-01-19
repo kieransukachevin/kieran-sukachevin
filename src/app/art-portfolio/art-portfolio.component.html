@@ -1,8 +1,0 @@
-<div *ngFor="let name of artNames; index as i">
-  <div *ngIf="lessThan(i, numberOfArtNames - 1); else noBottomMargin">
-    <app-art-container [name]="name" [bottomMargin]="bottomMargin"></app-art-container>
-  </div>
-  <ng-template #noBottomMargin>
-    <app-art-container [name]="name"></app-art-container>
-  </ng-template>
-</div>
