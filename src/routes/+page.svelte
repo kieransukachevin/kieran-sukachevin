@@ -9,7 +9,8 @@
 		My name is Kieran Sukachevin. I am a software developer and artist currently living in Southern
 		California.
 	</h2>
-	<p class="text-xl">
+
+	<p class="text-xl text-gray-900">
 		I am passionate about building new projects and pursuing new ideas at all times. My wheelhouse
 		is in frontend web development, primarily in React. Aside from personal endeavors, I have
 		extensive experience building large-scale, highly scalable web apps used by thousands of users
