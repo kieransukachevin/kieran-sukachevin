@@ -1,19 +1,46 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 </script>
 
 <div class="space-y-8">
-	<h1 class="text-7xl tracking-wide text-slate-700">Hello!</h1>
-	<div class="h-1 w-20 rounded bg-slate-700"></div>
+	<div class="flex flex-row items-center justify-between">
+		<div class="space-y-4">
+			<h1 class="inline-block text-7xl tracking-wide text-slate-700">Hello!</h1>
+			<div class="h-1 w-20 rounded bg-slate-700"></div>
+		</div>
+		<div></div>
+		<img src="/profile.jpg" alt="Profile Picture" class="inline-block w-60 rounded-3xl shadow-lg" />
+		<div></div>
+	</div>
 	<h2 class="gradient animate p-4 font-serif text-gray-900">
 		My name is Kieran Sukachevin. I am a software developer and artist currently living in Southern
 		California.
 	</h2>
 
 	<p class="text-xl text-gray-900">
-		I am passionate about building new projects and pursuing new ideas at all times. My wheelhouse
-		is in frontend web development, primarily in React. Aside from personal endeavors, I have
-		extensive experience building large-scale, highly scalable web apps used by thousands of users
-		(checkout my Linkedin). Feel free to reach out to me via the contact page!
+		I am passionate about building <strong>new projects</strong> and I love learning
+		<strong>new things</strong>, whether it is new frontend frameworks, new ways of designing better
+		UIs, or new ideas from the
+		<a
+			href="https://www.goodreads.com/user/show/166417120-kieran-sukachevin"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="underline">books I read</a
+		>.
+	</p>
+	<p class="text-xl text-gray-900">
+		As a software developer, I specialize in frontend web development, primarily with <em>React</em
+		>, and I have extensive experience building
+		<strong> highly scalable, enterprise web apps</strong> used by thousands of users (<a
+			href="https://www.linkedin.com/in/kieransukachevin/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="underline">checkout my Linkedin</a
+		>).
+	</p>
+	<p class="text-xl text-gray-900">
+		Feel free to reach out to me via the
+		<a href={resolve('/contact')} class="underline">contact page</a>!
 	</p>
 </div>
 

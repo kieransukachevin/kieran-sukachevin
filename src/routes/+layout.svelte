@@ -12,9 +12,24 @@
 </script>
 
 <div class="h-screen bg-white text-slate-800 transition-all">
-	<nav class="flex items-center gap-6 border-b border-gray-500 px-16 py-4 text-slate-600">
-		<NavButton href={resolve('/')}>About</NavButton>
-		<NavButton href={resolve('/contact')}>Contact</NavButton>
-	</nav>
+	<div class=" border-b border-gray-500">
+		<nav class="m-auto flex max-w-170 items-center gap-6 border-gray-500 py-4 text-slate-600">
+			<NavButton href={resolve('/')}>About</NavButton>
+			<NavButton href={resolve('/contact')}>Contact</NavButton>
+			<NavButton href={'https://kieransukachevin.com/'}>Art</NavButton>
+
+			<div class="flex-1"></div>
+
+			<NavButton href={'https://www.linkedin.com/in/kieran-sukachevin-365a87198/'}>
+				<img src="/linkedin.png" alt="Linkedin Logo" class="size-7" /></NavButton
+			>
+			<NavButton href={'https://github.com/kieransukachevin/kieran'}
+				><img src="/github.svg" alt="Github Logo" class="size-8" /></NavButton
+			>
+			<NavButton href={'https://www.instagram.com/kieransuka/'}
+				><img src={'/instagram.svg'} alt="Instagram Logo" class="size-8" /></NavButton
+			>
+		</nav>
+	</div>
 	<div class="m-auto max-w-170 space-y-4 pt-12">{@render children()}</div>
 </div>
