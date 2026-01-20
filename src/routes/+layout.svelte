@@ -23,7 +23,7 @@
 			<NavButton href={'https://www.linkedin.com/in/kieran-sukachevin-365a87198/'}>
 				<img src={asset('/linkedin.png')} alt="Linkedin Logo" class="size-7" /></NavButton
 			>
-			<NavButton href={'https://github.com/kieransukachevin/kieran'}
+			<NavButton href={'https://github.com/kieransukachevin/'}
 				><img src={asset('/github.svg')} alt="Github Logo" class="size-8" /></NavButton
 			>
 			<NavButton href={'https://www.instagram.com/kieransuka/'}
