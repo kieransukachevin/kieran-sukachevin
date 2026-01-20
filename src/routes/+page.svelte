@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { resolve, asset } from '$app/paths';
 </script>
 
 <div class="space-y-8">
@@ -9,7 +9,11 @@
 			<div class="h-1 w-20 rounded bg-slate-700"></div>
 		</div>
 		<div></div>
-		<img src="/profile.jpg" alt="Profile Picture" class="inline-block w-60 rounded-3xl shadow-lg" />
+		<img
+			src={asset('/profile.jpg')}
+			alt="Profile Picture"
+			class="inline-block w-60 rounded-3xl shadow-lg"
+		/>
 		<div></div>
 	</div>
 	<h2 class="gradient animate p-4 font-serif text-gray-900">
@@ -40,7 +44,7 @@
 	</p>
 	<p class="text-xl text-gray-900">
 		Feel free to reach out to me via the
-		<a href={resolve('/contact')} class="underline">contact page</a>!
+		<a href={resolve('/contact')} class="underline">contact page</a> :)
 	</p>
 </div>
 

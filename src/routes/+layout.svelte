@@ -1,7 +1,7 @@
 <script lang="ts">
 	import './layout.css';
 	import NavButton from '$lib/nav-button.svelte';
-	import { resolve } from '$app/paths';
+	import { resolve, asset } from '$app/paths';
 
 	const { children } = $props();
 	// If you're using a fallback (i.e. SPA mode) you don't need to prerender all
@@ -21,13 +21,13 @@
 			<div class="flex-1"></div>
 
 			<NavButton href={'https://www.linkedin.com/in/kieran-sukachevin-365a87198/'}>
-				<img src="/linkedin.png" alt="Linkedin Logo" class="size-7" /></NavButton
+				<img src={asset('/linkedin.png')} alt="Linkedin Logo" class="size-7" /></NavButton
 			>
 			<NavButton href={'https://github.com/kieransukachevin/kieran'}
-				><img src="/github.svg" alt="Github Logo" class="size-8" /></NavButton
+				><img src={asset('/github.svg')} alt="Github Logo" class="size-8" /></NavButton
 			>
 			<NavButton href={'https://www.instagram.com/kieransuka/'}
-				><img src={'/instagram.svg'} alt="Instagram Logo" class="size-8" /></NavButton
+				><img src={asset('/instagram.svg')} alt="Instagram Logo" class="size-8" /></NavButton
 			>
 		</nav>
 	</div>
