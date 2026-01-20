@@ -12,7 +12,7 @@
 		<img
 			src={asset('/profile.jpg')}
 			alt="Profile Picture"
-			class="inline-block w-60 rounded-3xl shadow-lg"
+			class="inline-block size-60 rounded-3xl shadow-lg"
 		/>
 		<div></div>
 	</div>
