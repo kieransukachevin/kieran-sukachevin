@@ -3,9 +3,9 @@
 </script>
 
 <div class="space-y-8">
-	<div class="flex flex-row items-center justify-between">
+	<div class="flex flex-row justify-between">
 		<div class="space-y-4">
-			<h1 class="inline-block text-7xl tracking-wide text-slate-700">Hello!</h1>
+			<h1 class="mt-8 inline-block text-8xl tracking-wide text-slate-700">Hello!</h1>
 			<div class="h-1 w-20 rounded bg-slate-700"></div>
 		</div>
 		<div></div>

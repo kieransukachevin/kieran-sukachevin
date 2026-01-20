@@ -31,5 +31,5 @@
 			>
 		</nav>
 	</div>
-	<div class="m-auto max-w-170 space-y-4 pt-12">{@render children()}</div>
+	<div class="m-auto max-w-170 space-y-4 pt-6">{@render children()}</div>
 </div>
