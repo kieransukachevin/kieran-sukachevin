@@ -56,3 +56,17 @@ To publish your library to [npm](https://www.npmjs.com):
 ```sh
 npm publish
 ```
+
+## Downloading the Resume
+
+Install the correct chrome version for use by puppeteer
+
+```
+pnpm install:chrome
+```
+
+Download the resume in pdf format, use the following script
+
+```sh
+./download-resume.sh
+```

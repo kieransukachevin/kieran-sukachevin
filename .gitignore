@@ -8,6 +8,9 @@ node_modules
 /.svelte-kit
 /build
 /dist
+/static/resume.css
+resume.pdf
+.cache
 
 # OS
 .DS_Store
