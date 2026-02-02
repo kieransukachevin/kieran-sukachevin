@@ -16,6 +16,7 @@
 		<nav class="m-auto flex max-w-170 items-center gap-6 border-gray-500 py-4 text-slate-600">
 			<NavButton href={resolve('/')}>About</NavButton>
 			<NavButton href={resolve('/contact')}>Contact</NavButton>
+			<NavButton href={resolve('/resume')}>Resume</NavButton>
 			<NavButton href={'https://kieransukachevin.com/'}>Art</NavButton>
 
 			<div class="flex-1"></div>

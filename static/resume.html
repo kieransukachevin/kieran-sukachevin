@@ -8,53 +8,79 @@
     <link rel="stylesheet" href="./resume.css">
 </head>
 
-<body>
+<body class="space-y-4 px-4 py-2">
     <h1>Kieran Sukachevin</h1>
-    <h2>Software Engineer | Frontend Developer</h2>
+    <h2>Software Developer | Frontend</h2>
 
     <nav>
-        <ul>
-            <li><a href="mailto:kieran.sukachevin@gmail.com">kieran.sukachevin@gmail.com</a> </li>
-            <li><a href="https://github.com/kieransukachevin/">https://github.com/kieransukachevin/</a></li>
-            <li>Loma Linda, CA</li>
+        <ul class="flex flex-row items-center gap-4  [&>li]:text-blue-800 [&>li]:hover:text-blue-500 [&>li]:text-xs">
+            <li><a href="mailto:kieran.sukachevin@gmail.com" class="flex items-center gap-1"><svg width="15" height="15"
+                        viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.94721 0.164594C7.66569 0.0238299 7.33431 0.0238302 7.05279 0.164594L0.552786 3.41459C0.214002 3.58399 0 3.93025 0 4.30902V12C0 12.5523 0.447715 13 1 13H14C14.5523 13 15 12.5523 15 12V4.30902C15 3.93025 14.786 3.58399 14.4472 3.41459L7.94721 0.164594ZM13.5689 4.09349L7.5 1.05902L1.43105 4.09349L7.5 7.29136L13.5689 4.09349ZM1 4.88366V12H14V4.88366L7.70977 8.19813C7.57848 8.26731 7.42152 8.26731 7.29023 8.19813L1 4.88366Z"
+                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>kieran.sukachevin@gmail.com</a> </li>
+            <li><a href="https://github.com/kieransukachevin/" class="flex items-center gap-1"><svg width="15"
+                        height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.49933 0.25C3.49635 0.25 0.25 3.49593 0.25 7.50024C0.25 10.703 2.32715 13.4206 5.2081 14.3797C5.57084 14.446 5.70302 14.2222 5.70302 14.0299C5.70302 13.8576 5.69679 13.4019 5.69323 12.797C3.67661 13.235 3.25112 11.825 3.25112 11.825C2.92132 10.9874 2.44599 10.7644 2.44599 10.7644C1.78773 10.3149 2.49584 10.3238 2.49584 10.3238C3.22353 10.375 3.60629 11.0711 3.60629 11.0711C4.25298 12.1788 5.30335 11.8588 5.71638 11.6732C5.78225 11.205 5.96962 10.8854 6.17658 10.7043C4.56675 10.5209 2.87415 9.89918 2.87415 7.12104C2.87415 6.32925 3.15677 5.68257 3.62053 5.17563C3.54576 4.99226 3.29697 4.25521 3.69174 3.25691C3.69174 3.25691 4.30015 3.06196 5.68522 3.99973C6.26337 3.83906 6.8838 3.75895 7.50022 3.75583C8.1162 3.75895 8.73619 3.83906 9.31523 3.99973C10.6994 3.06196 11.3069 3.25691 11.3069 3.25691C11.7026 4.25521 11.4538 4.99226 11.3795 5.17563C11.8441 5.68257 12.1245 6.32925 12.1245 7.12104C12.1245 9.9063 10.4292 10.5192 8.81452 10.6985C9.07444 10.9224 9.30633 11.3648 9.30633 12.0413C9.30633 13.0102 9.29742 13.7922 9.29742 14.0299C9.29742 14.2239 9.42828 14.4496 9.79591 14.3788C12.6746 13.4179 14.75 10.7025 14.75 7.50024C14.75 3.49593 11.5036 0.25 7.49933 0.25Z"
+                            fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>https://github.com/kieransukachevin/</a></li>
+            <li class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                    fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>Loma Linda, CA</li>
         </ul>
     </nav>
-    <p>Kieran Sukachevin is a software developer specializing in frontend web development currently located in Loma
+
+    <p class="text-sm">Kieran Sukachevin is a software developer specializing in frontend web development currently
+        located in Loma
         Linda, CA. He has extensive experience building and maintaining highly scalable, enterprise web
         application frontends used by thousands of users.
     </p>
 
     <section>
         <h2>Skills</h2>
-        <ul>
+        <ul
+            class="p-2 [&>li]:text-sm [&>li]:ring-1 flex flex-row [&>li]:rounded-md gap-2 flex-wrap [&>li]:py-1 [&>li]:px-2 [&>li]:ring-slate-200 [&>li]:hover:bg-slate-100 transition-all">
             <li>HTML</li>
             <li>CSS</li>
-            <li>Tailwind</li>
             <li>JavaScript</li>
             <li>Typescript</li>
-            <li>Graphql</li>
             <li>React</li>
+            <li>Tailwind</li>
+            <li>Graphql</li>
+            <li>Api Design</li>
+            <li>CRUD</li>
+            <li>Git</li>
+            <li>Frontend Architecture</li>
         </ul>
     </section>
 
     <section>
         <h2>Education</h2>
-        <h3>B.S. in Computer Science</h3>
-        <h4>Walla Walla University</h4>
-        <h4>Spring 2022</h4>
-        <h4>Cumulative GPA: 3.66</h4>
+        <div class="flex">
+            <div class="flex-1">
+                <h3 class="font-bold">B.S. in Computer Science</h3>
+                <h4>Walla Walla University</h4>
+                <h4 class="italic">Spring 2022</h4>
+                <h4>Cumulative GPA: 3.66</h4>
+            </div>
 
-        <h2>Minor in Art</h2>
-        <h3>Walla Walla University</h3>
-        <h4>Spring 2022</h4>
+            <div class="flex-1">
+                <h3 class="font-bold">Minor in Art</h3>
+                <h4>Walla Walla University</h4>
+                <h4 class="italic">Spring 2022</h4>
+            </div>
+        </div>
     </section>
 
     <section>
         <h2>Experience</h2>
-        <h3>Application Developer</h3>
+        <h3 class="font-bold">Application Developer</h3>
         <h4>Highpoint Technology Solutions</h4>
-        <h4>April 2023 - Present</h4>
-        <ul>
+        <h4 class="italic">April 2023 - Present</h4>
+        <ul class="list-disc list-inside pl-4 py-2 space-y-2">
             <li>Leading the development and maintenance of highly scalable React web applications used by higher
                 education institutions.</li>
 
@@ -78,10 +104,10 @@
             </li>
         </ul>
 
-        <h3>Web Programmer - Student Association Web Teams</h3>
+        <h3><span class="font-bold">Web Developer</span> - Student Association Web Teams</h3>
         <h4>Walla Walla University</h4>
-        <h4>September 2021 - Present</h4>
-        <ul>
+        <h4 class="italic">September 2021 - Present</h4>
+        <ul class="list-disc list-inside pl-4 py-2 space-y-2">
             <li>Wrote and maintained HTML, CSS, and JavaScript code for the Walla Walla University student body website.
             </li>
             <li>Used the Angular framework and continuous development with GitHub.</li>
