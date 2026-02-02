@@ -2,9 +2,9 @@
 	"name": "kieran-sukachevin",
 	"version": "0.0.1",
 	"scripts": {
-		"tailwind-watch": "npx @tailwindcss/cli -i ./resume-tailwind/tw-resume.css -o ./static/resume.css --watch",
+		"tw-resume": "npx @tailwindcss/cli -i ./resume-tailwind/tw-resume.css -o ./static/resume.css",
 		"dev": "vite dev",
-		"build": "vite build && npm run prepack",
+		"build": "vite build && npm run tw-resume && npm run prepack",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"prepack": "svelte-kit sync && svelte-package && publint",
