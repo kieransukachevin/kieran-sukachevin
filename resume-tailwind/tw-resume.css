@@ -8,4 +8,10 @@
 		@apply text-xl;
 		/* @apply border-b border-slate-400; */
 	}
+	h4 {
+		@apply text-sm;
+	}
+	li {
+		@apply leading-none;
+	}
 }
