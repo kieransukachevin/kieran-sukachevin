@@ -7,7 +7,6 @@
 	h2 {
 		@apply text-xl;
 		/* @apply border-b border-slate-400; */
-		@apply pb-1;
 		/* @apply border-b border-slate-400; */
 	}
 	h3 {
