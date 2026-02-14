@@ -11,7 +11,7 @@
 	export const traillingSlash = 'always';
 </script>
 
-<div class="h-screen bg-white text-slate-800 transition-all">
+<div class="flex h-screen flex-col bg-white text-slate-800 transition-all">
 	<div class=" border-b border-gray-500">
 		<nav class="m-auto flex max-w-170 items-center gap-6 border-gray-500 py-4 text-slate-600">
 			<NavButton href={resolve('/')}>About</NavButton>
@@ -32,5 +32,7 @@
 			>
 		</nav>
 	</div>
-	<div class="m-auto max-w-170 space-y-4 pt-6">{@render children()}</div>
+	<div class="m-auto flex max-w-170 flex-1 flex-col space-y-4 pt-6">
+		{@render children()}
+	</div>
 </div>

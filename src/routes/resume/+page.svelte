@@ -5,4 +5,4 @@
 	const resumeCss = asset('/resume.css');
 </script>
 
-<iframe src={asset('/resume.html')} class="h-[80vh] w-full" title="Resume" />
+<iframe src={asset('/resume.html')} class="h-full w-170" title="Resume" />
