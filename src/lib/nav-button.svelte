@@ -11,7 +11,9 @@
 
 <a
 	{href}
-	class="text-2xl transition-colors hover:text-slate-800 {isActive ? 'text-slate-800' : ''}"
+	class="text-xl transition-colors hover:text-slate-800 {isActive
+		? 'text-slate-800'
+		: 'text-slate-500'}"
 >
 	{@render children()}
 </a>
